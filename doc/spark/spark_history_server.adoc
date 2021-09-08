@@ -1,0 +1,16 @@
+# Spark History Server
+
+http://127.0.0.1:18080/
+
+
+## Run
+
+```bash
+mkdir /tmp/spark-events
+
+cd /opt/spark3/sbin/
+./start-history-server.sh
+```
+
+
+
