@@ -1,0 +1,1146 @@
+### Dr Elephant
+
+
+https://github.com/linkedin/dr-elephant
+
+
+https://github.com/linkedin/dr-elephant/tree/master/test/com/linkedin/drelephant/analysis
+
+
+https://github.com/linkedin/dr-elephant/wiki/Developer-Guide#configuring-the-heuristics
+
+https://github.com/linkedin/dr-elephant/wiki/User-Guide
+
+
+https://github.com/linkedin/dr-elephant/wiki/Metrics-and-Heuristics
+
+
+https://github.com/linkedin/dr-elephant/wiki/Auto-Tuning
+
+
+https://github.com/linkedin/dr-elephant/wiki/Tuning-Tips
+
+Presentation:
+
+https://databricks.com/session/dr-elephant-achieving-quicker-easier-and-cost-effective-big-data-analytics
+
+
+
+Install:
+
+```sh
+[/o/h/D/dr-elephant] : ./compile.sh 
+Checking for required programs...
+ Program requirement is fulfilled!
+Using the default configuration
+Hadoop Version : 2.3.0
+Spark Version  : 1.4.0
+Other opts set : 
+############################################################################
+npm installation found, we'll compile with the new user interface
+############################################################################
++ sleep 3
++ ember_assets=/opt/huawei/DG-120/dr-elephant/public/assets
++ ember_resources_dir=/opt/huawei/DG-120/dr-elephant/public/assets/ember
++ ember_web_directory=/opt/huawei/DG-120/dr-elephant/web
++ cd /opt/huawei/DG-120/dr-elephant/web
++ npm install
+[/o/h/D/dr-elephant] : ./compile.sh
+Checking for required programs...
+ Program requirement is fulfilled!
+Using the default configuration
+Hadoop Version : 3.3.0
+Spark Version  : 3.1.1
+Other opts set : 
+############################################################################
+npm installation found, we'll compile with the new user interface
+############################################################################
++ sleep 3
++ ember_assets=/opt/huawei/DG-120/dr-elephant/public/assets
++ ember_resources_dir=/opt/huawei/DG-120/dr-elephant/public/assets/ember
++ ember_web_directory=/opt/huawei/DG-120/dr-elephant/web
++ cd /opt/huawei/DG-120/dr-elephant/web
++ npm install
+npm WARN deprecated core-js@2.6.12: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated json3@3.3.2: Please use the native JSON object instead of JSON 3
+npm WARN deprecated xmldom@0.1.31: Deprecated due to CVE-2021-21366 resolved in 0.5.0
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated core-js@2.6.12: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated pkg-resolve@0.1.14: Not maintained anymore.
+npm WARN deprecated browserslist@1.7.7: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated mkdirp@0.3.5: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated postcss-cssnext@2.11.0: 'postcss-cssnext' has been deprecated in favor of 'postcss-preset-env'. Read more at https://moox.io/blog/deprecating-cssnext/
+npm WARN deprecated mkdirp@0.4.2: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated uuid@2.0.3: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated core-js@1.2.7: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
+npm WARN deprecated exists-sync@0.0.3: Please replace with usage of fs.existsSync
+npm WARN deprecated exists-sync@0.0.4: Please replace with usage of fs.existsSync
+npm WARN deprecated ember-cli-babel@5.1.10: ember-cli-babel 5.x has been deprecated. Please upgrade to at least ember-cli-babel 6.6.
+npm WARN deprecated bower@1.8.8: We don't recommend using Bower for new projects. Please consider Yarn and Webpack or Parcel. You can read how to migrate legacy project here: https://bower.io/blog/2017/how-to-migrate-away-from-bower/
+npm ERR! code 1
+npm ERR! path /opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass
+npm ERR! command failed
+npm ERR! command sh -c node scripts/build.js
+npm ERR! Building: /usr/local/Cellar/node/16.3.0/bin/node /opt/huawei/DG-120/dr-elephant/web/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= --libsass_ldflags= --libsass_library=
+npm ERR! gyp info it worked if it ends with ok
+npm ERR! gyp verb cli [
+npm ERR! gyp verb cli   '/usr/local/Cellar/node/16.3.0/bin/node',
+npm ERR! gyp verb cli   '/opt/huawei/DG-120/dr-elephant/web/node_modules/node-gyp/bin/node-gyp.js',
+npm ERR! gyp verb cli   'rebuild',
+npm ERR! gyp verb cli   '--verbose',
+npm ERR! gyp verb cli   '--libsass_ext=',
+npm ERR! gyp verb cli   '--libsass_cflags=',
+npm ERR! gyp verb cli   '--libsass_ldflags=',
+npm ERR! gyp verb cli   '--libsass_library='
+npm ERR! gyp verb cli ]
+npm ERR! gyp info using node-gyp@3.8.0
+npm ERR! gyp info using node@16.3.0 | darwin | x64
+npm ERR! gyp verb command rebuild []
+npm ERR! gyp verb command clean []
+npm ERR! gyp verb clean removing "build" directory
+npm ERR! gyp verb command configure []
+npm ERR! gyp verb check python checking for Python executable "python2" in the PATH
+npm ERR! gyp verb `which` succeeded python2 /usr/bin/python2
+npm ERR! gyp verb check python version `/usr/bin/python2 -c "import sys; print "2.7.16
+npm ERR! gyp verb check python version .%s.%s" % sys.version_info[:3];"` returned: %j
+npm ERR! gyp verb get node dir no --target version specified, falling back to host node version: 16.3.0
+npm ERR! gyp verb command install [ '16.3.0' ]
+npm ERR! gyp verb install input version string "16.3.0"
+npm ERR! gyp verb install installing version: 16.3.0
+npm ERR! gyp verb install --ensure was passed, so won't reinstall if already installed
+npm ERR! gyp verb install version not already installed, continuing with install 16.3.0
+npm ERR! gyp verb ensuring nodedir is created /Users/yarenty/.node-gyp/16.3.0
+npm ERR! gyp verb created nodedir /Users/yarenty/.node-gyp
+npm ERR! gyp http GET https://nodejs.org/download/release/v16.3.0/node-v16.3.0-headers.tar.gz
+npm ERR! gyp http 200 https://nodejs.org/download/release/v16.3.0/node-v16.3.0-headers.tar.gz
+npm ERR! gyp verb extracted file from tarball include/node/common.gypi
+npm ERR! gyp verb extracted file from tarball include/node/config.gypi
+npm ERR! gyp verb extracted file from tarball include/node/node.h
+npm ERR! gyp verb extracted file from tarball include/node/node_api.h
+npm ERR! gyp verb extracted file from tarball include/node/js_native_api.h
+npm ERR! gyp verb extracted file from tarball include/node/js_native_api_types.h
+npm ERR! gyp verb extracted file from tarball include/node/node_api_types.h
+npm ERR! gyp verb extracted file from tarball include/node/node_buffer.h
+npm ERR! gyp verb extracted file from tarball include/node/node_object_wrap.h
+npm ERR! gyp verb extracted file from tarball include/node/node_version.h
+npm ERR! gyp verb extracted file from tarball include/node/v8-internal.h
+npm ERR! gyp verb extracted file from tarball include/node/v8-profiler.h
+npm ERR! gyp verb extracted file from tarball include/node/v8config.h
+npm ERR! gyp verb extracted file from tarball include/node/v8-platform.h
+npm ERR! gyp verb extracted file from tarball include/node/v8-version.h
+npm ERR! gyp verb extracted file from tarball include/node/v8.h
+npm ERR! gyp verb extracted file from tarball include/node/cppgc/common.h
+npm ERR! gyp verb extracted file from tarball include/node/uv.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/aix.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/android-ifaddrs.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/bsd.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/darwin.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/linux.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/os390.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/posix.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/stdint-msvc2008.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/sunos.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/threadpool.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/tree.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/errno.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/unix.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/win.h
+npm ERR! gyp verb extracted file from tarball include/node/uv/version.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/aes.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/asn1.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/asn1_mac.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/asn1t.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/async.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/asyncerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/bio.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/bioerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/blowfish.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/bnerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/buffer.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/buffererr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/camellia.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/cast.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/cmac.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/cms.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/cmserr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/comp.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/comperr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/conf_api.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/conferr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/cryptoerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ct.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/cterr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/des.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dh.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dherr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dsa.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dsaerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dtls1.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ebcdic.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ecdh.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ecdsa.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/engine.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/engineerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/err.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/sslerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/hmac.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/idea.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/kdf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/kdferr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/lhash.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/md2.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/md4.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/md5.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/mdc2.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/modes.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/objects.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/objectserr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ocsp.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ocsperr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/x509err.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/crypto.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/pem.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/pem2.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/pkcs12.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/pkcs12err.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/pkcs7.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/pkcs7err.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/rand.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/rand_drbg.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/randerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/rc2.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/rc4.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/rc5.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ripemd.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/rsa.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/rsaerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/safestack.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/seed.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/sha.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/srp.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/srtp.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ssl2.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/evperr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/stack.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/store.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/storeerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/symhacks.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ts.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/tserr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/txt_db.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ui.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/uierr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/whrlpool.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ec.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/x509v3.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/x509v3err.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/opensslv.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ssl.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/pemerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ssl3.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ossl_typ.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/tls1.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/ecerr.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/evp.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/x509.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/x509_vfy.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/asn1err.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/bn.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/e_os2.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/obj_mac.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/asm_avx2/include/progs.h
+npm ERR! gyp verb content checksum node-v16.3.0-headers.tar.gz 9187fd584acdd945d4cdec04db981f2408118256251b09f11cf214189827e099
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/darwin64-arm64-cc/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/crypto/include/internal/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/crypto/include/internal/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/crypto/buildinf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/include/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/include/progs.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/bn_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dso_conf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/opensslconf.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dso_conf_asm.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/bn_conf_asm.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/bn_conf_no-asm.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/dso_conf_no-asm.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/opensslconf_asm.h
+npm ERR! gyp verb extracted file from tarball include/node/openssl/opensslconf_no-asm.h
+npm ERR! gyp verb extracted file from tarball include/node/zconf.h
+npm ERR! gyp verb extracted file from tarball include/node/zlib.h
+npm ERR! gyp verb tarball done parsing tarball
+npm ERR! gyp verb check download content checksum, need to download `SHASUMS256.txt`... 
+npm ERR! gyp verb checksum url https://nodejs.org/download/release/v16.3.0/SHASUMS256.txt
+npm ERR! gyp http GET https://nodejs.org/download/release/v16.3.0/SHASUMS256.txt
+npm ERR! gyp http 200 https://nodejs.org/download/release/v16.3.0/SHASUMS256.txt
+npm ERR! gyp verb checksum data {"node-v16.3.0-aix-ppc64.tar.gz":"4241dc60ff8bb1748391fd16cde459a486824e23b96b13c223fb97b3fecd9fe9","node-v16.3.0-darwin-arm64.tar.gz":"aeac294dbe54a4dfd222eedfbae704b185c40702254810e2c5917f6dbc80e017","node-v16.3.0-darwin-arm64.tar.xz":"69244ab72e65d0270a9c442ae84a158172a74d6a6c5f89635b3a0da8a6a568c0","node-v16.3.0-darwin-x64.tar.gz":"3e075bcfb6130dda84bfd04633cb228ec71e72d9a844c57efb7cfff130b4be89","node-v16.3.0-darwin-x64.tar.xz":"5e683d95e16c4ba1b110ac4fb422878bc43951bd37e9a63974ef162310568387","node-v16.3.0-headers.tar.gz":"9187fd584acdd945d4cdec04db981f2408118256251b09f11cf214189827e099","node-v16.3.0-headers.tar.xz":"b9cff8d32ff51104cb7dc6e24efb2179daab920fe8a487eb484428715fba7630","node-v16.3.0-linux-arm64.tar.gz":"7040a1f2a0a1aa9cf0f66ec46d0049c6638cb4c05490c13ca71d298fa94ed8ce","node-v16.3.0-linux-arm64.tar.xz":"67dd97e41aad1bc11736e99cba119525b4f3472b132c46730ba8cf03f7076e23","node-v16.3.0-linux-armv7l.tar.gz":"1621a744bafad0aa3a8fbf988929862ef4432dd21d16f5ec6b585ad74cb963e9","node-v16.3.0-linux-armv7l.tar.xz":"c8817e30fb910476ec1f223de7eedd31f3d157ddf2003a3083d7f5662180e4de","node-v16.3.0-linux-ppc64le.tar.gz":"2e6ab262d3337004cc35d14004a80219b332c007d8b77ed3e7dd2fcaadd3b902","node-v16.3.0-linux-ppc64le.tar.xz":"ec35bf9c769f3fe854be84889d37587cce4c148c313e54a20e3c5d65aab16eb9","node-v16.3.0-linux-s390x.tar.gz":"5106f666866af87b9a2819f8aa8af1300785f971e7ca39df903ac9bf9dc5f84c","node-v16.3.0-linux-s390x.tar.xz":"e74ed2016c0dd08c03e6ad3e9c205bde300811fb3f9e4bc1ec9f7b4ccc0a0d23","node-v16.3.0-linux-x64.tar.gz":"86f6d06c05021ae73b51f57bb56569a2eebd4a2ecc0b881972a0572e465b5d27","node-v16.3.0-linux-x64.tar.xz":"5347ece975747e4d9768d4ed3f8b2220c955ac01f8a695347cd7f71ff5efa318","node-v16.3.0.pkg":"b0ccdac402aafd52ab16a925a092753f20cc536727a292e2e362d1bac5e2ec18","node-v16.3.0.tar.gz":"11d00034a9864660eadf9835d09de2bed97b245093626705d8917897d8f36704","node-v16.3.0.tar.xz":"7aab47b82c19702c73b2834a623c3932732a15185fddea14b9ddc710936fac5f","node-v16.3.0-win-x64.7z":"3a39ba94dfd9c7a94e156f6fefef0fcb91ca2b37c2280a4f28e5d5e70c171cf5","node-v16.3.0-win-x64.zip":"3352e58d3603cf58964409d07f39f3816285317d638ddb0a0bf3af5deb2ff364","node-v16.3.0-win-x86.7z":"c5fec63e74633e77cbf331c6e08cfb26c84d7123e5bbb58c8298fb68ba13d28b","node-v16.3.0-win-x86.zip":"91ef8392cfe40ec7418e5aea0936148fafab13af67cf95138db21c112ed87793","node-v16.3.0-x64.msi":"cfd65d0441ed94f7a99cc0d6262262ac9d9c77efed8d3c88fa57fecce1b2274f","node-v16.3.0-x86.msi":"54f84cafc148190fe9c66cacea324d3db474ea8efd196b4655ffcd131398670b","win-x64/node.exe":"c221bf0fd633277e9f0eacc82b06423ddf3adef3b04269b86fa81b974ee08a28","win-x64/node.lib":"c1f38a0c578c1e7b062b10cd6c122795dd5e8d5d7252d22a05ecc01d0a581fd9","win-x64/node_pdb.7z":"ad1333ca8e343a4da2cb948f85eae55682154b31ea2d04d6e929f13cf121df17","win-x64/node_pdb.zip":"fbb04d0ad8602a2906b05bf5c7f11a4f652e50b693afb60ace99bc1c000dcd66","win-x86/node.exe":"98594f76e90a06419fd5ccbfc6f3e249ed8a258eed28de894a5274e4ad4aaa56","win-x86/node.lib":"a50f3c57671e7a07e7541f493e98cbbf006535598c93465ed14bb6f9cf253317","win-x86/node_pdb.7z":"295cdf2f6e53d2588bc2e766704bd1c989b5aaec58aa4ad30f52b5a3c1288d22","win-x86/node_pdb.zip":"3aa30ca56c0b5925e26e42c0d22cf5a786e9f99d501b3788c86cfa1b20b2935a"}
+npm ERR! gyp verb download contents checksum {"node-v16.3.0-headers.tar.gz":"9187fd584acdd945d4cdec04db981f2408118256251b09f11cf214189827e099"}
+npm ERR! gyp verb validating download checksum for node-v16.3.0-headers.tar.gz (9187fd584acdd945d4cdec04db981f2408118256251b09f11cf214189827e099 == 9187fd584acdd945d4cdec04db981f2408118256251b09f11cf214189827e099)
+npm ERR! gyp verb get node dir target node version installed: 16.3.0
+npm ERR! gyp verb build dir attempting to create "build" dir: /opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass/build
+npm ERR! gyp verb build dir "build" dir needed to be created? /opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass/build
+npm ERR! gyp verb build/config.gypi creating config file
+npm ERR! gyp verb build/config.gypi writing out config file: /opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass/build/config.gypi
+npm ERR! (node:29519) [DEP0150] DeprecationWarning: Setting process.config is deprecated. In the future the property will be read-only.
+npm ERR! (Use `node --trace-deprecation ...` to show where the warning was created)
+npm ERR! gyp verb config.gypi checking for gypi file: /opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass/config.gypi
+npm ERR! gyp verb common.gypi checking for gypi file: /opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass/common.gypi
+npm ERR! gyp verb gyp gyp format was not specified; forcing "make"
+npm ERR! gyp info spawn /usr/bin/python2
+npm ERR! gyp info spawn args [
+npm ERR! gyp info spawn args   '/opt/huawei/DG-120/dr-elephant/web/node_modules/node-gyp/gyp/gyp_main.py',
+npm ERR! gyp info spawn args   'binding.gyp',
+npm ERR! gyp info spawn args   '-f',
+npm ERR! gyp info spawn args   'make',
+npm ERR! gyp info spawn args   '-I',
+npm ERR! gyp info spawn args   '/opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass/build/config.gypi',
+npm ERR! gyp info spawn args   '-I',
+npm ERR! gyp info spawn args   '/opt/huawei/DG-120/dr-elephant/web/node_modules/node-gyp/addon.gypi',
+npm ERR! gyp info spawn args   '-I',
+npm ERR! gyp info spawn args   '/Users/yarenty/.node-gyp/16.3.0/include/node/common.gypi',
+npm ERR! gyp info spawn args   '-Dlibrary=shared_library',
+npm ERR! gyp info spawn args   '-Dvisibility=default',
+npm ERR! gyp info spawn args   '-Dnode_root_dir=/Users/yarenty/.node-gyp/16.3.0',
+npm ERR! gyp info spawn args   '-Dnode_gyp_dir=/opt/huawei/DG-120/dr-elephant/web/node_modules/node-gyp',
+npm ERR! gyp info spawn args   '-Dnode_lib_file=/Users/yarenty/.node-gyp/16.3.0/<(target_arch)/node.lib',
+npm ERR! gyp info spawn args   '-Dmodule_root_dir=/opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass',
+npm ERR! gyp info spawn args   '-Dnode_engine=v8',
+npm ERR! gyp info spawn args   '--depth=.',
+npm ERR! gyp info spawn args   '--no-parallel',
+npm ERR! gyp info spawn args   '--generator-output',
+npm ERR! gyp info spawn args   'build',
+npm ERR! gyp info spawn args   '-Goutput_dir=.'
+npm ERR! gyp info spawn args ]
+npm ERR! No receipt for 'com.apple.pkg.CLTools_Executables' found at '/'.
+npm ERR! 
+npm ERR! No receipt for 'com.apple.pkg.DeveloperToolsCLILeo' found at '/'.
+npm ERR! 
+npm ERR! No receipt for 'com.apple.pkg.DeveloperToolsCLI' found at '/'.
+npm ERR! 
+npm ERR! gyp: No Xcode or CLT version detected!
+npm ERR! gyp ERR! configure error 
+npm ERR! gyp ERR! stack Error: `gyp` failed with exit code: 1
+npm ERR! gyp ERR! stack     at ChildProcess.onCpExit (/opt/huawei/DG-120/dr-elephant/web/node_modules/node-gyp/lib/configure.js:345:16)
+npm ERR! gyp ERR! stack     at ChildProcess.emit (node:events:394:28)
+npm ERR! gyp ERR! stack     at Process.ChildProcess._handle.onexit (node:internal/child_process:290:12)
+npm ERR! gyp ERR! System Darwin 20.5.0
+npm ERR! gyp ERR! command "/usr/local/Cellar/node/16.3.0/bin/node" "/opt/huawei/DG-120/dr-elephant/web/node_modules/node-gyp/bin/node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
+npm ERR! gyp ERR! cwd /opt/huawei/DG-120/dr-elephant/web/node_modules/node-sass
+npm ERR! gyp ERR! node -v v16.3.0
+npm ERR! gyp ERR! node-gyp -v v3.8.0
+npm ERR! gyp ERR! not ok 
+npm ERR! Build failed with error code: 1
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/yarenty/.npm/_logs/2021-06-18T13_13_19_033Z-debug.log
++ node_modules/bower/bin/bower install
+./compile.sh: line 375: node_modules/bower/bin/bower: No such file or directory
++ node_modules/ember-cli/bin/ember build --prod
+./compile.sh: line 376: node_modules/ember-cli/bin/ember: No such file or directory
++ rm -r /opt/huawei/DG-120/dr-elephant/public/assets/ember
++ mkdir /opt/huawei/DG-120/dr-elephant/public/assets/ember
++ cp dist/assets/dr-elephant.css /opt/huawei/DG-120/dr-elephant/public/assets/ember/
+cp: dist/assets/dr-elephant.css: No such file or directory
++ cp dist/assets/dr-elephant.js /opt/huawei/DG-120/dr-elephant/public/assets/ember/
+cp: dist/assets/dr-elephant.js: No such file or directory
++ cp dist/assets/vendor.js /opt/huawei/DG-120/dr-elephant/public/assets/ember/
+cp: dist/assets/vendor.js: No such file or directory
++ cp dist/assets/vendor.css /opt/huawei/DG-120/dr-elephant/public/assets/ember/
+cp: dist/assets/vendor.css: No such file or directory
++ cp -r dist/fonts /opt/huawei/DG-120/dr-elephant/public/assets/
+cp: dist/fonts: No such file or directory
++ cd /opt/huawei/DG-120/dr-elephant
++ trap exit SIGINT SIGTERM
++ set +x
+Command is: play  -Dhadoopversion=3.3.0 -Dsparkversion=3.1.1  clean compile test 
+activator is /opt/activator/bin/activator
+Getting com.typesafe.activator activator-launcher 1.3.12 ...
+downloading file:/opt/activator/repository/com.typesafe.activator/activator-launcher/1.3.12/jars/activator-launcher.jar ...
+	[SUCCESSFUL ] com.typesafe.activator#activator-launcher;1.3.12!activator-launcher.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-lang/scala-library/2.11.8/jars/scala-library.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-library;2.11.8!scala-library.jar (36ms)
+downloading file:/opt/activator/repository/com.typesafe.activator/activator-props/1.3.12/jars/activator-props.jar ...
+	[SUCCESSFUL ] com.typesafe.activator#activator-props;1.3.12!activator-props.jar (3ms)
+downloading file:/opt/activator/repository/com.typesafe.activator/activator-ui-common/1.3.12/jars/activator-ui-common.jar ...
+	[SUCCESSFUL ] com.typesafe.activator#activator-ui-common;1.3.12!activator-ui-common.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/launcher-interface/1.0.0-M1/jars/launcher-interface.jar ...
+	[SUCCESSFUL ] org.scala-sbt#launcher-interface;1.0.0-M1!launcher-interface.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/completion_2.11/0.13.11/jars/completion_2.11.jar ...
+	[SUCCESSFUL ] org.scala-sbt#completion_2.11;0.13.11!completion_2.11.jar (7ms)
+downloading file:/opt/activator/repository/com.typesafe.activator/activator-templates-cache/1.0-a0afb008ea619bf9d87dc010156cddffa8a6f880/jars/activator-templates-cache.jar ...
+	[SUCCESSFUL ] com.typesafe.activator#activator-templates-cache;1.0-a0afb008ea619bf9d87dc010156cddffa8a6f880!activator-templates-cache.jar (7ms)
+downloading file:/opt/activator/repository/com.typesafe.activator/activator-common/1.0-a0afb008ea619bf9d87dc010156cddffa8a6f880/jars/activator-common.jar ...
+	[SUCCESSFUL ] com.typesafe.activator#activator-common;1.0-a0afb008ea619bf9d87dc010156cddffa8a6f880!activator-common.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-lang.modules/scala-xml_2.11/1.0.1/bundles/scala-xml_2.11.jar ...
+	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle) (8ms)
+downloading file:/opt/activator/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/bundles/scala-parser-combinators_2.11.jar ...
+	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(bundle) (6ms)
+downloading file:/opt/activator/repository/org.apache.lucene/lucene-core/4.3.0/jars/lucene-core.jar ...
+	[SUCCESSFUL ] org.apache.lucene#lucene-core;4.3.0!lucene-core.jar (18ms)
+downloading file:/opt/activator/repository/org.apache.lucene/lucene-analyzers-common/4.3.0/jars/lucene-analyzers-common.jar ...
+	[SUCCESSFUL ] org.apache.lucene#lucene-analyzers-common;4.3.0!lucene-analyzers-common.jar (12ms)
+downloading file:/opt/activator/repository/org.apache.lucene/lucene-queryparser/4.3.0/jars/lucene-queryparser.jar ...
+	[SUCCESSFUL ] org.apache.lucene#lucene-queryparser;4.3.0!lucene-queryparser.jar (6ms)
+downloading file:/opt/activator/repository/com.typesafe.akka/akka-actor_2.11/2.3.9/jars/akka-actor_2.11.jar ...
+	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.11;2.3.9!akka-actor_2.11.jar (20ms)
+downloading file:/opt/activator/repository/com.amazonaws/aws-java-sdk/1.3.29/jars/aws-java-sdk.jar ...
+	[SUCCESSFUL ] com.amazonaws#aws-java-sdk;1.3.29!aws-java-sdk.jar (46ms)
+downloading file:/opt/activator/repository/org.apache.commons/commons-compress/1.4.1/jars/commons-compress.jar ...
+	[SUCCESSFUL ] org.apache.commons#commons-compress;1.4.1!commons-compress.jar (5ms)
+downloading file:/opt/activator/repository/org.tukaani/xz/1.0/jars/xz.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.0!xz.jar (4ms)
+downloading file:/opt/activator/repository/org.apache.lucene/lucene-queries/4.3.0/jars/lucene-queries.jar ...
+	[SUCCESSFUL ] org.apache.lucene#lucene-queries;4.3.0!lucene-queries.jar (5ms)
+downloading file:/opt/activator/repository/org.apache.lucene/lucene-sandbox/4.3.0/jars/lucene-sandbox.jar ...
+	[SUCCESSFUL ] org.apache.lucene#lucene-sandbox;4.3.0!lucene-sandbox.jar (3ms)
+downloading file:/opt/activator/repository/jakarta-regexp/jakarta-regexp/1.4/jars/jakarta-regexp.jar ...
+	[SUCCESSFUL ] jakarta-regexp#jakarta-regexp;1.4!jakarta-regexp.jar (3ms)
+downloading file:/opt/activator/repository/com.typesafe/config/1.2.1/bundles/config.jar ...
+	[SUCCESSFUL ] com.typesafe#config;1.2.1!config.jar(bundle) (4ms)
+downloading file:/opt/activator/repository/commons-logging/commons-logging/1.1.1/jars/commons-logging.jar ...
+	[SUCCESSFUL ] commons-logging#commons-logging;1.1.1!commons-logging.jar (3ms)
+downloading file:/opt/activator/repository/org.apache.httpcomponents/httpclient/4.1/jars/httpclient.jar ...
+	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.1!httpclient.jar (5ms)
+downloading file:/opt/activator/repository/commons-codec/commons-codec/1.3/jars/commons-codec.jar ...
+	[SUCCESSFUL ] commons-codec#commons-codec;1.3!commons-codec.jar (3ms)
+downloading file:/opt/activator/repository/org.codehaus.jackson/jackson-core-asl/1.8.9/jars/jackson-core-asl.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.8.9!jackson-core-asl.jar (5ms)
+downloading file:/opt/activator/repository/org.codehaus.jackson/jackson-mapper-asl/1.8.9/jars/jackson-mapper-asl.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.8.9!jackson-mapper-asl.jar (7ms)
+downloading file:/opt/activator/repository/org.apache.httpcomponents/httpcore/4.1/jars/httpcore.jar ...
+	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.1!httpcore.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/collections_2.11/0.13.11/jars/collections_2.11.jar ...
+	[SUCCESSFUL ] org.scala-sbt#collections_2.11;0.13.11!collections_2.11.jar (6ms)
+downloading file:/opt/activator/repository/org.scala-sbt/control_2.11/0.13.11/jars/control_2.11.jar ...
+	[SUCCESSFUL ] org.scala-sbt#control_2.11;0.13.11!control_2.11.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/io_2.11/0.13.11/jars/io_2.11.jar ...
+	[SUCCESSFUL ] org.scala-sbt#io_2.11;0.13.11!io_2.11.jar (5ms)
+downloading file:/opt/activator/repository/jline/jline/2.13/jars/jline.jar ...
+	[SUCCESSFUL ] jline#jline;2.13!jline.jar (5ms)
+downloading file:/opt/activator/repository/org.fusesource.jansi/jansi/1.11/jars/jansi.jar ...
+	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.11!jansi.jar (3ms)
+:: retrieving :: org.scala-sbt#boot-app
+	confs: [default]
+	31 artifacts copied, 0 already retrieved (20211kB/37ms)
+Getting Scala 2.11.8 (for activator-launcher)...
+downloading file:/opt/activator/repository/org.scala-lang/scala-compiler/2.11.8/jars/scala-compiler.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.11.8!scala-compiler.jar (78ms)
+downloading file:/opt/activator/repository/org.scala-lang/scala-reflect/2.11.8/jars/scala-reflect.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.8!scala-reflect.jar (27ms)
+downloading file:/opt/activator/repository/org.scala-lang.modules/scala-xml_2.11/1.0.4/bundles/scala-xml_2.11.jar ...
+	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle) (7ms)
+downloading file:/opt/activator/repository/jline/jline/2.12.1/jars/jline.jar ...
+	[SUCCESSFUL ] jline#jline;2.12.1!jline.jar (6ms)
+:: retrieving :: org.scala-sbt#boot-scala
+	confs: [default]
+	6 artifacts copied, 0 already retrieved (26456kB/22ms)
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by activator.ActivatorProxyAuthenticator$ (file:/Users/yarenty/.sbt/boot/scala-2.11.8/com.typesafe.activator/activator-launcher/1.3.12/activator-launcher-1.3.12.jar) to field java.net.Authenticator.theAuthenticator
+WARNING: Please consider reporting this to the maintainers of activator.ActivatorProxyAuthenticator$
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Getting org.scala-sbt sbt 0.13.9 ...
+downloading file:/opt/activator/repository/org.scala-sbt/sbt/0.13.9/jars/sbt.jar ...
+	[SUCCESSFUL ] org.scala-sbt#sbt;0.13.9!sbt.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-lang/scala-library/2.10.5/jars/scala-library.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.5!scala-library.jar (40ms)
+downloading file:/opt/activator/repository/org.scala-sbt/main/0.13.9/jars/main.jar ...
+	[SUCCESSFUL ] org.scala-sbt#main;0.13.9!main.jar (18ms)
+downloading file:/opt/activator/repository/org.scala-sbt/compiler-interface/0.13.9/jars/compiler-interface-src.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compiler-interface;0.13.9!compiler-interface-src.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/compiler-interface/0.13.9/jars/compiler-interface-bin.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compiler-interface;0.13.9!compiler-interface-bin.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-sbt/precompiled-2_8_2/0.13.9/jars/compiler-interface-bin.jar ...
+	[SUCCESSFUL ] org.scala-sbt#precompiled-2_8_2;0.13.9!compiler-interface-bin.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-sbt/precompiled-2_9_2/0.13.9/jars/compiler-interface-bin.jar ...
+	[SUCCESSFUL ] org.scala-sbt#precompiled-2_9_2;0.13.9!compiler-interface-bin.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/precompiled-2_9_3/0.13.9/jars/compiler-interface-bin.jar ...
+	[SUCCESSFUL ] org.scala-sbt#precompiled-2_9_3;0.13.9!compiler-interface-bin.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/actions/0.13.9/jars/actions.jar ...
+	[SUCCESSFUL ] org.scala-sbt#actions;0.13.9!actions.jar (6ms)
+downloading file:/opt/activator/repository/org.scala-sbt/main-settings/0.13.9/jars/main-settings.jar ...
+	[SUCCESSFUL ] org.scala-sbt#main-settings;0.13.9!main-settings.jar (7ms)
+downloading file:/opt/activator/repository/org.scala-sbt/interface/0.13.9/jars/interface.jar ...
+	[SUCCESSFUL ] org.scala-sbt#interface;0.13.9!interface.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/io/0.13.9/jars/io.jar ...
+	[SUCCESSFUL ] org.scala-sbt#io;0.13.9!io.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-sbt/ivy/0.13.9/jars/ivy.jar ...
+	[SUCCESSFUL ] org.scala-sbt#ivy;0.13.9!ivy.jar (15ms)
+downloading file:/opt/activator/repository/org.scala-sbt/logging/0.13.9/jars/logging.jar ...
+	[SUCCESSFUL ] org.scala-sbt#logging;0.13.9!logging.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/logic/0.13.9/jars/logic.jar ...
+	[SUCCESSFUL ] org.scala-sbt#logic;0.13.9!logic.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/process/0.13.9/jars/process.jar ...
+	[SUCCESSFUL ] org.scala-sbt#process;0.13.9!process.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/run/0.13.9/jars/run.jar ...
+	[SUCCESSFUL ] org.scala-sbt#run;0.13.9!run.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/command/0.13.9/jars/command.jar ...
+	[SUCCESSFUL ] org.scala-sbt#command;0.13.9!command.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-sbt/classpath/0.13.9/jars/classpath.jar ...
+	[SUCCESSFUL ] org.scala-sbt#classpath;0.13.9!classpath.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/completion/0.13.9/jars/completion.jar ...
+	[SUCCESSFUL ] org.scala-sbt#completion;0.13.9!completion.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-sbt/api/0.13.9/jars/api.jar ...
+	[SUCCESSFUL ] org.scala-sbt#api;0.13.9!api.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-sbt/compiler-integration/0.13.9/jars/compiler-integration.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compiler-integration;0.13.9!compiler-integration.jar (6ms)
+downloading file:/opt/activator/repository/org.scala-sbt/compiler-ivy-integration/0.13.9/jars/compiler-ivy-integration.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compiler-ivy-integration;0.13.9!compiler-ivy-integration.jar (2ms)
+downloading file:/opt/activator/repository/org.scala-sbt/relation/0.13.9/jars/relation.jar ...
+	[SUCCESSFUL ] org.scala-sbt#relation;0.13.9!relation.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/task-system/0.13.9/jars/task-system.jar ...
+	[SUCCESSFUL ] org.scala-sbt#task-system;0.13.9!task-system.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/tasks/0.13.9/jars/tasks.jar ...
+	[SUCCESSFUL ] org.scala-sbt#tasks;0.13.9!tasks.jar (3ms)
+downloading] org.scala-lang#scala-reflect;2.10.5!scala-reflect.jar (20ms)
+downloading file:/opt/activator/repository/org.scala-sbt/control/0.13.9/jars/control.jar ...
+	[SUCCESSFUL ] org.scala-sbt#control;0.13.9!control.jar (2ms)
+downloading file:/opt/activator/repository/org.scala-sbt/collections/0.13.9/jars/collections.jar ...
+	[SUCCESSFUL ] org.scala-sbt#collections;0.13.9!collections.jar (5ms)
+downloading file:/opt file:/opt/activator/repository/org.scala-sbt/tracking/0.13.9/jars/tracking.jar ...
+	[SUCCESSFUL ] org.scala-sbt#tracking;0.13.9!tracking.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/testing/0.13.9/jars/testing.jar ...
+	[SUCCESSFUL ] org.scala-sbt#testing;0.13.9!testing.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-lang/scala-compiler/2.10.5/jars/scala-compiler.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.5!scala-compiler.jar (70ms)
+downloading file:/opt/activator/repository/org.scala-lang/scala-reflect/2.10.5/jars/scala-reflect.jar ...
+	[SUCCESSFUL /activator/repository/jline/jline/2.11/jars/jline.jar ...
+	[SUCCESSFUL ] jline#jline;2.11!jline.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/incremental-compiler/0.13.9/jars/incremental-compiler.jar ...
+	[SUCCESSFUL ] org.scala-sbt#incremental-compiler;0.13.9!incremental-compiler.jar (7ms)
+downloading file:/opt/activator/repository/org.scala-sbt/compile/0.13.9/jars/compile.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compile;0.13.9!compile.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-sbt/persist/0.13.9/jars/persist.jar ...
+	[SUCCESSFUL ] org.scala-sbt#persist;0.13.9!persist.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/classfile/0.13.9/jars/classfile.jar ...
+	[SUCCESSFUL ] org.scala-sbt#classfile;0.13.9!classfile.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-tools.sbinary/sbinary_2.10/0.4.2/jars/sbinary_2.10.jar ...
+	[SUCCESSFUL ] org.scala-tools.sbinary#sbinary_2.10;0.4.2!sbinary_2.10.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/cross/0.13.9/jars/cross.jar ...
+	[SUCCESSFUL ] org.scala-sbt#cross;0.13.9!cross.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt.ivy/ivy/2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93/jars/ivy.jar ...
+	[SUCCESSFUL ] org.scala-sbt.ivy#ivy;2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93!ivy.jar (9ms)
+downloading file:/opt/activator/repository/com.jcraft/jsch/0.1.46/jars/jsch.jar ...
+	[SUCCESSFUL ] com.jcraft#jsch;0.1.46!jsch.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/serialization_2.10/0.1.1/jars/serialization_2.10.jar ...
+	[SUCCESSFUL ] org.scala-sbt#serialization_2.10;0.1.1!serialization_2.10.jar (5ms)
+downloading file:/opt/activator/repository/org.scala-lang.modules/scala-pickling_2.10/0.10.0/jars/scala-pickling_2.10.jar ...
+	[SUCCESSFUL ] org.scala-lang.modules#scala-pickling_2.10;0.10.0!scala-pickling_2.10.jar (8ms)
+downloading file:/opt/activator/repository/org.json4s/json4s-core_2.10/3.2.10/jars/json4s-core_2.10.jar ...
+	[SUCCESSFUL ] org.json4s#json4s-core_2.10;3.2.10!json4s-core_2.10.jar (6ms)
+downloading file:/opt/activator/repository/org.spire-math/jawn-parser_2.10/0.6.0/jars/jawn-parser_2.10.jar ...
+	[SUCCESSFUL ] org.spire-math#jawn-parser_2.10;0.6.0!jawn-parser_2.10.jar (3ms)
+downloading file:/opt/activator/repository/org.spire-math/json4s-support_2.10/0.6.0/jars/json4s-support_2.10.jar ...
+	[SUCCESSFUL ] org.spire-math#json4s-support_2.10;0.6.0!json4s-support_2.10.jar (2ms)
+downloading file:/opt/activator/repository/org.scalamacros/quasiquotes_2.10/2.0.1/jars/quasiquotes_2.10.jar ...
+	[SUCCESSFUL ] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar (7ms)
+downloading file:/opt/activator/repository/org.json4s/json4s-ast_2.10/3.2.10/jars/json4s-ast_2.10.jar ...
+	[SUCCESSFUL ] org.json4s#json4s-ast_2.10;3.2.10!json4s-ast_2.10.jar (3ms)
+downloading file:/opt/activator/repository/com.thoughtworks.paranamer/paranamer/2.6/jars/paranamer.jar ...
+	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar (3ms)
+downloading file:/opt/activator/repository/org.scala-sbt/cache/0.13.9/jars/cache.jar ...
+	[SUCCESSFUL ] org.scala-sbt#cache;0.13.9!cache.jar (4ms)
+downloading file:/opt/activator/repository/org.scala-sbt/test-agent/0.13.9/jars/test-agent.jar ...
+	[SUCCESSFUL ] org.scala-sbt#test-agent;0.13.9!test-agent.jar (2ms)
+downloading file:/opt/activator/repository/org.scala-sbt/apply-macro/0.13.9/jars/apply-macro.jar ...
+	[SUCCESSFUL ] org.scala-sbt#apply-macro;0.13.9!apply-macro.jar (3ms)
+:: retrieving :: org.scala-sbt#boot-app
+	confs: [default]
+	52 artifacts copied, 0 already retrieved (17785kB/36ms)
+Getting Scala 2.10.5 (for sbt)...
+downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.5/jline-2.10.5.jar ...
+	[SUCCESSFUL ] org.scala-lang#jline;2.10.5!jline.jar (162ms)
+downloading file:/opt/activator/repository/org.fusesource.jansi/jansi/1.4/jars/jansi.jar ...
+	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.4!jansi.jar (4ms)
+:: retrieving :: org.scala-sbt#boot-scala
+	confs: [default]
+	5 artifacts copied, 0 already retrieved (24493kB/17ms)
+error: error while loading package, Missing dependency 'object java.lang.Object in compiler mirror', required by /Users/yarenty/.sbt/boot/scala-2.10.5/lib/scala-library.jar(scala/package.class)
+error: error while loading package, Missing dependency 'object java.lang.Object in compiler mirror', required by /Users/yarenty/.sbt/boot/scala-2.10.5/lib/scala-library.jar(scala/runtime/package.class)
+scala.reflect.internal.MissingRequirementError: object java.lang.Object in compiler mirror not found.
+	at scala.reflect.internal.MissingRequirementError$.signal(MissingRequirementError.scala:16)
+	at scala.reflect.internal.MissingRequirementError$.notFound(MissingRequirementError.scala:17)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:48)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:40)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:40)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:61)
+	at scala.reflect.internal.Mirrors$RootsBase.getClassByName(Mirrors.scala:99)
+	at scala.reflect.internal.Mirrors$RootsBase.getRequiredClass(Mirrors.scala:102)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass$lzycompute(Definitions.scala:264)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass(Definitions.scala:264)
+	at scala.reflect.internal.Definitions$DefinitionsClass.AnyRefClass$lzycompute(Definitions.scala:263)
+	at scala.reflect.internal.Definitions$DefinitionsClass.AnyRefClass(Definitions.scala:263)
+	at scala.reflect.internal.Definitions$DefinitionsClass.specialPolyClass(Definitions.scala:1120)
+	at scala.reflect.internal.Definitions$DefinitionsClass.RepeatedParamClass$lzycompute(Definitions.scala:407)
+	at scala.reflect.internal.Definitions$DefinitionsClass.RepeatedParamClass(Definitions.scala:407)
+	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreClasses$lzycompute(Definitions.scala:1154)
+	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreClasses(Definitions.scala:1152)
+	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode$lzycompute(Definitions.scala:1196)
+	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode(Definitions.scala:1196)
+	at scala.reflect.internal.Definitions$DefinitionsClass.init(Definitions.scala:1261)
+	at scala.tools.nsc.Global$Run.<init>(Global.scala:1290)
+	at sbt.compiler.Eval$$anon$1.<init>(Eval.scala:141)
+	at sbt.compiler.Eval.run$lzycompute$1(Eval.scala:141)
+	at sbt.compiler.Eval.run$1(Eval.scala:141)
+	at sbt.compiler.Eval.unlinkAll$1(Eval.scala:144)
+	at sbt.compiler.Eval.evalCommon(Eval.scala:153)
+	at sbt.compiler.Eval.eval(Eval.scala:96)
+	at sbt.EvaluateConfigurations$.evaluateDslEntry(EvaluateConfigurations.scala:177)
+	at sbt.EvaluateConfigurations$$anonfun$9.apply(EvaluateConfigurations.scala:117)
+	at sbt.EvaluateConfigurations$$anonfun$9.apply(EvaluateConfigurations.scala:115)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105)
+	at sbt.EvaluateConfigurations$.evaluateSbtFile(EvaluateConfigurations.scala:115)
+	at sbt.Load$.sbt$Load$$loadSettingsFile$1(Load.scala:712)
+	at sbt.Load$$anonfun$sbt$Load$$memoLoadSettingsFile$1$1.apply(Load.scala:717)
+	at sbt.Load$$anonfun$sbt$Load$$memoLoadSettingsFile$1$1.apply(Load.scala:716)
+	at scala.collection.MapLike$class.getOrElse(MapLike.scala:128)
+	at scala.collection.AbstractMap.getOrElse(Map.scala:58)
+	at sbt.Load$.sbt$Load$$memoLoadSettingsFile$1(Load.scala:716)
+	at sbt.Load$$anonfun$loadFiles$1$2.apply(Load.scala:723)
+	at sbt.Load$$anonfun$loadFiles$1$2.apply(Load.scala:723)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105)
+	at sbt.Load$.loadFiles$1(Load.scala:723)
+	at sbt.Load$.discoverProjects(Load.scala:734)
+	at sbt.Load$.discover$1(Load.scala:545)
+	at sbt.Load$.loadTransitive(Load.scala:574)
+	at sbt.Load$.loadProjects$1(Load.scala:442)
+	at sbt.Load$.loadUnit(Load.scala:446)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:91)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:90)
+	at sbt.BuildLoader.apply(BuildLoader.scala:140)
+	at sbt.Load$.loadAll(Load.scala:334)
+	at sbt.Load$.loadURI(Load.scala:289)
+	at sbt.Load$.load(Load.scala:285)
+	at sbt.Load$.load(Load.scala:276)
+	at sbt.Load$.apply(Load.scala:130)
+	at sbt.Load$.buildPluginDefinition(Load.scala:821)
+	at sbt.Load$.buildPlugins(Load.scala:787)
+	at sbt.Load$.plugins(Load.scala:775)
+	at sbt.Load$.loadUnit(Load.scala:431)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:91)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:90)
+	at sbt.BuildLoader.apply(BuildLoader.scala:140)
+	at sbt.Load$.loadAll(Load.scala:334)
+	at sbt.Load$.loadURI(Load.scala:289)
+	at sbt.Load$.load(Load.scala:285)
+	at sbt.Load$.load(Load.scala:276)
+	at sbt.Load$.apply(Load.scala:130)
+	at sbt.Load$.defaultLoad(Load.scala:36)
+	at sbt.BuiltinCommands$.doLoadProject(Main.scala:481)
+	at sbt.BuiltinCommands$$anonfun$loadProjectImpl$2.apply(Main.scala:475)
+	at sbt.BuiltinCommands$$anonfun$loadProjectImpl$2.apply(Main.scala:475)
+	at sbt.Command$$anonfun$applyEffect$1$$anonfun$apply$2.apply(Command.scala:59)
+	at sbt.Command$$anonfun$applyEffect$1$$anonfun$apply$2.apply(Command.scala:59)
+	at sbt.Command$$anonfun$applyEffect$2$$anonfun$apply$3.apply(Command.scala:61)
+	at sbt.Command$$anonfun$applyEffect$2$$anonfun$apply$3.apply(Command.scala:61)
+	at sbt.Command$.process(Command.scala:93)
+	at sbt.MainLoop$$anonfun$1$$anonfun$apply$1.apply(MainLoop.scala:98)
+	at sbt.MainLoop$$anonfun$1$$anonfun$apply$1.apply(MainLoop.scala:98)
+	at sbt.State$$anon$1.process(State.scala:184)
+	at sbt.MainLoop$$anonfun$1.apply(MainLoop.scala:98)
+	at sbt.MainLoop$$anonfun$1.apply(MainLoop.scala:98)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.MainLoop$.next(MainLoop.scala:98)
+	at sbt.MainLoop$.run(MainLoop.scala:91)
+	at sbt.MainLoop$$anonfun$runWithNewLog$1.apply(MainLoop.scala:70)
+	at sbt.MainLoop$$anonfun$runWithNewLog$1.apply(MainLoop.scala:65)
+	at sbt.Using.apply(Using.scala:24)
+	at sbt.MainLoop$.runWithNewLog(MainLoop.scala:65)
+	at sbt.MainLoop$.runAndClearLast(MainLoop.scala:48)
+	at sbt.MainLoop$.runLoggedLoop(MainLoop.scala:32)
+	at sbt.MainLoop$.runLogged(MainLoop.scala:24)
+	at sbt.StandardMain$.runManaged(Main.scala:53)
+	at sbt.xMain.run(Main.scala:28)
+	at xsbt.boot.Launch$$anonfun$run$1.apply(Launch.scala:109)
+	at xsbt.boot.Launch$.withContextLoader(Launch.scala:128)
+	at xsbt.boot.Launch$.run(Launch.scala:109)
+	at xsbt.boot.Launch$$anonfun$apply$1.apply(Launch.scala:35)
+	at xsbt.boot.Launch$.launch(Launch.scala:117)
+	at xsbt.boot.Launch$.apply(Launch.scala:18)
+	at xsbt.boot.Boot$.runImpl(Boot.scala:41)
+	at xsbt.boot.Boot$.main(Boot.scala:17)
+	at xsbt.boot.Boot.main(Boot.scala)
+[error] scala.reflect.internal.MissingRequirementError: object java.lang.Object in compiler mirror not found.
+[error] Use 'last' for the full log.
+Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? l
+scala.reflect.internal.MissingRequirementError: object java.lang.Object in compiler mirror not found.
+	at scala.reflect.internal.MissingRequirementError$.signal(MissingRequirementError.scala:16)
+	at scala.reflect.internal.MissingRequirementError$.notFound(MissingRequirementError.scala:17)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:48)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:40)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:40)
+	at scala.reflect.internal.Mirrors$RootsBase.getModuleOrClass(Mirrors.scala:61)
+	at scala.reflect.internal.Mirrors$RootsBase.getClassByName(Mirrors.scala:99)
+	at scala.reflect.internal.Mirrors$RootsBase.getRequiredClass(Mirrors.scala:102)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass$lzycompute(Definitions.scala:264)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass(Definitions.scala:264)
+	at scala.reflect.internal.Definitions$DefinitionsClass.AnyRefClass$lzycompute(Definitions.scala:263)
+	at scala.reflect.internal.Definitions$DefinitionsClass.AnyRefClass(Definitions.scala:263)
+	at scala.reflect.internal.Definitions$DefinitionsClass.specialPolyClass(Definitions.scala:1120)
+	at scala.reflect.internal.Definitions$DefinitionsClass.RepeatedParamClass$lzycompute(Definitions.scala:407)
+	at scala.reflect.internal.Definitions$DefinitionsClass.RepeatedParamClass(Definitions.scala:407)
+	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreClasses$lzycompute(Definitions.scala:1154)
+	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreClasses(Definitions.scala:1152)
+	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode$lzycompute(Definitions.scala:1196)
+	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode(Definitions.scala:1196)
+	at scala.reflect.internal.Definitions$DefinitionsClass.init(Definitions.scala:1261)
+	at scala.tools.nsc.Global$Run.<init>(Global.scala:1290)
+	at sbt.compiler.Eval$$anon$1.<init>(Eval.scala:141)
+	at sbt.compiler.Eval.run$lzycompute$1(Eval.scala:141)
+	at sbt.compiler.Eval.run$1(Eval.scala:141)
+	at sbt.compiler.Eval.unlinkAll$1(Eval.scala:144)
+	at sbt.compiler.Eval.evalCommon(Eval.scala:153)
+	at sbt.compiler.Eval.eval(Eval.scala:96)
+	at sbt.EvaluateConfigurations$.evaluateDslEntry(EvaluateConfigurations.scala:177)
+	at sbt.EvaluateConfigurations$$anonfun$9.apply(EvaluateConfigurations.scala:117)
+	at sbt.EvaluateConfigurations$$anonfun$9.apply(EvaluateConfigurations.scala:115)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105)
+	at sbt.EvaluateConfigurations$.evaluateSbtFile(EvaluateConfigurations.scala:115)
+	at sbt.Load$.sbt$Load$$loadSettingsFile$1(Load.scala:712)
+	at sbt.Load$$anonfun$sbt$Load$$memoLoadSettingsFile$1$1.apply(Load.scala:717)
+	at sbt.Load$$anonfun$sbt$Load$$memoLoadSettingsFile$1$1.apply(Load.scala:716)
+	at scala.collection.MapLike$class.getOrElse(MapLike.scala:128)
+	at scala.collection.AbstractMap.getOrElse(Map.scala:58)
+	at sbt.Load$.sbt$Load$$memoLoadSettingsFile$1(Load.scala:716)
+	at sbt.Load$$anonfun$loadFiles$1$2.apply(Load.scala:723)
+	at sbt.Load$$anonfun$loadFiles$1$2.apply(Load.scala:723)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105)
+	at sbt.Load$.loadFiles$1(Load.scala:723)
+	at sbt.Load$.discoverProjects(Load.scala:734)
+	at sbt.Load$.discover$1(Load.scala:545)
+	at sbt.Load$.loadTransitive(Load.scala:574)
+	at sbt.Load$.loadProjects$1(Load.scala:442)
+	at sbt.Load$.loadUnit(Load.scala:446)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:91)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:90)
+	at sbt.BuildLoader.apply(BuildLoader.scala:140)
+	at sbt.Load$.loadAll(Load.scala:334)
+	at sbt.Load$.loadURI(Load.scala:289)
+	at sbt.Load$.load(Load.scala:285)
+	at sbt.Load$.load(Load.scala:276)
+	at sbt.Load$.apply(Load.scala:130)
+	at sbt.Load$.buildPluginDefinition(Load.scala:821)
+	at sbt.Load$.buildPlugins(Load.scala:787)
+	at sbt.Load$.plugins(Load.scala:775)
+	at sbt.Load$.loadUnit(Load.scala:431)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.Load$$anonfun$18$$anonfun$apply$11.apply(Load.scala:281)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:91)
+	at sbt.BuildLoader$$anonfun$componentLoader$1$$anonfun$apply$4$$anonfun$apply$5$$anonfun$apply$6.apply(BuildLoader.scala:90)
+	at sbt.BuildLoader.apply(BuildLoader.scala:140)
+	at sbt.Load$.loadAll(Load.scala:334)
+	at sbt.Load$.loadURI(Load.scala:289)
+	at sbt.Load$.load(Load.scala:285)
+	at sbt.Load$.load(Load.scala:276)
+	at sbt.Load$.apply(Load.scala:130)
+	at sbt.Load$.defaultLoad(Load.scala:36)
+	at sbt.BuiltinCommands$.doLoadProject(Main.scala:481)
+	at sbt.BuiltinCommands$$anonfun$loadProjectImpl$2.apply(Main.scala:475)
+	at sbt.BuiltinCommands$$anonfun$loadProjectImpl$2.apply(Main.scala:475)
+	at sbt.Command$$anonfun$applyEffect$1$$anonfun$apply$2.apply(Command.scala:59)
+	at sbt.Command$$anonfun$applyEffect$1$$anonfun$apply$2.apply(Command.scala:59)
+	at sbt.Command$$anonfun$applyEffect$2$$anonfun$apply$3.apply(Command.scala:61)
+	at sbt.Command$$anonfun$applyEffect$2$$anonfun$apply$3.apply(Command.scala:61)
+	at sbt.Command$.process(Command.scala:93)
+	at sbt.MainLoop$$anonfun$1$$anonfun$apply$1.apply(MainLoop.scala:98)
+	at sbt.MainLoop$$anonfun$1$$anonfun$apply$1.apply(MainLoop.scala:98)
+	at sbt.State$$anon$1.process(State.scala:184)
+	at sbt.MainLoop$$anonfun$1.apply(MainLoop.scala:98)
+	at sbt.MainLoop$$anonfun$1.apply(MainLoop.scala:98)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.MainLoop$.next(MainLoop.scala:98)
+	at sbt.MainLoop$.run(MainLoop.scala:91)
+	at sbt.MainLoop$$anonfun$runWithNewLog$1.apply(MainLoop.scala:70)
+	at sbt.MainLoop$$anonfun$runWithNewLog$1.apply(MainLoop.scala:65)
+	at sbt.Using.apply(Using.scala:24)
+	at sbt.MainLoop$.runWithNewLog(MainLoop.scala:65)
+	at sbt.MainLoop$.runAndClearLast(MainLoop.scala:48)
+	at sbt.MainLoop$.runLoggedLoop(MainLoop.scala:32)
+	at sbt.MainLoop$.runLogged(MainLoop.scala:24)
+	at sbt.StandardMain$.runManaged(Main.scala:53)
+	at sbt.xMain.run(Main.scala:28)
+	at xsbt.boot.Launch$$anonfun$run$1.apply(Launch.scala:109)
+	at xsbt.boot.Launch$.withContextLoader(Launch.scala:128)
+	at xsbt.boot.Launch$.run(Launch.scala:109)
+	at xsbt.boot.Launch$$anonfun$apply$1.apply(Launch.scala:35)
+	at xsbt.boot.Launch$.launch(Launch.scala:117)
+	at xsbt.boot.Launch$.apply(Launch.scala:18)
+	at xsbt.boot.Boot$.runImpl(Boot.scala:41)
+	at xsbt.boot.Boot$.main(Boot.scala:17)
+	at xsbt.boot.Boot.main(Boot.scala)
+[error] scala.reflect.internal.MissingRequirementError: object java.lang.Object in compiler mirror not found.
+[error] Use 'last' for the full log.
+Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? i
+[warn] Ignoring load failure: no project loaded.
+[error] Not a valid command: clean (similar: last, eval)
+[error] clean
+[error]      ^
+Build failed...
+
+
+```
+
+
+
+
+
+

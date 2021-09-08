@@ -1,0 +1,31 @@
+### SparkMeasure
+
+
+
+CODE:
+https://github.com/LucaCanali/sparkMeasure
+
+
+Description:
+
+https://index.scala-lang.org/lucacanali/sparkmeasure/spark-measure/0.17?target=_2.12
+
+
+Presentation:
+https://databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics
+
+
+More details:
+https://db-blog.web.cern.ch/blog/luca-canali/2018-08-sparkmeasure-tool-performance-troubleshooting-apache-spark-workloads
+
+
+Usage:
+
+https://github.com/LucaCanali/sparkMeasure/blob/master/docs/Scala_shell_and_notebooks.md
+
+
+
+Extras:
+
+https://github.com/LucaCanali/Miscellaneous/blob/master/Spark_Notes/Spark_EventLog.md
+

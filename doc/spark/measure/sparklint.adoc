@@ -1,0 +1,12 @@
+### SparkLint
+
+
+https://github.com/groupon/sparklint
+
+
+
+
+Presentation:
+
+https://databricks.com/session/sparklint-a-tool-for-monitoring-identifying-and-tuning-inefficient-spark-jobs-across-your-cluster
+
