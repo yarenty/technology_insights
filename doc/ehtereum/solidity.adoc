@@ -41,3 +41,13 @@ Tapped 7 formulae (20 files, 1.7MB)
 🍺  /usr/local/Cellar/solidity/0.8.7: 8 files, 28.7MB
 ```
 
+
+## Documentation
+
+https://soliditylang.org/
+
+https://docs.soliditylang.org/en/latest/
+
+https://docs.soliditylang.org/en/latest/using-the-compiler.html
+
+
