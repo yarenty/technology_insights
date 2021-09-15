@@ -2,3 +2,6 @@
 /.idea/
 /project/target/
 /target/
+*/target/
+*/task-temp-directory/
+/project/project/
