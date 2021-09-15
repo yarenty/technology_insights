@@ -245,3 +245,87 @@ You can connect with the OpenFaaS community — to talk about Kubernetes, ARM, R
 
 https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS156x+2T2021/home
 
+
+
+
+## Pi
+
+The following are good resources to use:
+
+Raspberry PI Foundation: products and hardware
+
+https://www.raspberrypi.org/products/
+
+BitScope: Cluster Blade product for industrial applications
+
+https://www.bitscope.com/blog/JK/?p=JK38B
+
+
+Pimoroni: sensors and add-ons for Raspberry Pi.
+
+https://pimoroni.com/
+
+
+The following are complementary resources from Alex Ellis:
+
+Watch a video from KubeCon: The Past, Present, and Future of Kubernetes on Raspberry Pi
+https://www.youtube.com/watch?v=jfUpF40--60
+
+
+Follow a 15-minute guide for K3s on Raspberry Pi with applications: Walk-through — install Kubernetes to your Raspberry Pi in 15 minutes
+
+https://alexellisuk.medium.com/walk-through-install-kubernetes-to-your-raspberry-pi-in-15-minutes-84a8492dc95a
+
+
+## K3s in production
+
+The following are some of the resources that you can use for self-study:
+
+Learn more about K3s in the project documentation
+https://k3s.io/
+
+Learn about k3sup as used in the course - k3sup on GitHub - install K3s over SSH
+https://k3sup.dev/
+
+
+Learn about ArgoCD
+https://argoproj.github.io/argo-cd/
+
+
+Learn about Flux
+https://fluxcd.io/
+
+The following are complementary resources from Alex Ellis:
+
+Learn to set up K3s on clouds without load-balancers: Bare-metal Kubernetes with K3s
+https://blog.alexellis.io/bare-metal-kubernetes-with-k3s/
+
+Set up K3s using a database and load-balancer: Set up Your K3s Cluster for High Availability on DigitalOcean
+https://rancher.com/blog/2020/k3s-high-availability
+
+## Functions as Service
+
+
+Learn everything you need to know about Serverless on Kubernetes with the Edx course: Introduction to Serverless on Kubernetes (LFS157x).
+https://www.edx.org/course/introduction-to-serverless-on-kubernetes
+
+
+faasd offers a way to run OpenFaaS without also having to manage Kubernetes, and may provide a suitable alternative, especially with resource constrained devices.
+https://github.com/openfaas/faasd
+https://www.openfaas.com/
+
+
+## Kubernetes
+
+There are numerous resources to learn more about Kubernetes:
+
+Browse the CNCF Landscape
+https://landscape.cncf.io/
+
+Check out the Kubernetes documentation and tutorials
+https://kubernetes.io/docs/home/
+https://kubernetes.io/docs/tutorials/
+
+Take a Kubernetes course offered by The Linux Foundation
+Gain a Kubernetes certification: Certified Kubernetes Administrator (CKA), Certified Kubernetes Application Developer (CKAD), Certified Kubernetes Security Specialist (CKS)
+Learn more about K3s.
