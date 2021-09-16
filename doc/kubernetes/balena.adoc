@@ -4,10 +4,8 @@ https://www.balena.io/
 
 
 
-Build your IoT project
-with balena.
-We provide a full technology stack to help you develop,
-deploy, and manage projects at any scale.
+Build your IoT project with balena.
+We provide a full technology stack to help you develop, deploy, and manage projects at any scale.
 
 
 Balena is for fleet owners

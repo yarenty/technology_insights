@@ -1,0 +1,57 @@
+# Technology trends - INDEX
+
+
+
+## ML
+
+* xref:{docdir}/mindsdb.adoc[MindsDB] - rapid prototyping & deployment DB models from DB. REduce MLworkflow time.
+
+
+## DB
+* xref:{docdir}/influxdb.adoc[InfluxDB] - time series DB
+
+
+
+## Visualization
+
+* xref:{docdir}/grafana.adoc[Grafana]
+
+
+## IoT
+* xref:{docdir}/shodan.adoc[Shodan] - search engine for IoTs
+
+
+
+## Kubernetes
+
+* xref:{docdir}/kubernetes/k3s.adoc[K3S] - kubernetes for IoT (respberry)
+* xref:{docdir}/kubernetes/akri.adoc[AKRI] - expose devices in kubernetes, also GPUs/ FPGAs
+* xref:{docdir}/kubernetes/balena.adoc[Balena] - develop, deploy and manage IoT project. (have a fleet)
+
+
+
+## Lanugages
+
+* xref:{docdir}/java.adoc[Java]
+* xref:{docdir}/game_in_scala.adoc[Scala - GAMING!]
+* xref:{docdir}/CoreWars.adoc[CoreWars] - RedCode
+* xref:{docdir}/sbt.adoc[SBT]
+
+
+## Spark
+* xref:{docdir}/spark/spark_history_server.adoc[History Server]
+* xref:{docdir}/spark/measure/dr_elephant.adoc[Measure - dr Elephant]
+* xref:{docdir}/spark/measure/dropwizard.adoc[Measure - dropwizard]
+* xref:{docdir}/spark/measure/ovh.adoc[Measure - OVH]
+* xref:{docdir}/spark/measure/sparklens.adoc[Measure - Sparklens]
+* xref:{docdir}/spark/measure/sparklint.adoc[Measure - Sparkklint]
+* xref:{docdir}/spark/measure/sparkmeasure.adoc[Measure - Sparkmeasure]
+* xref:{docdir}/spark/measure/sparkoscope.adoc[Measure - Sparkoscope]
+
+
+
+
+## TODO
+
+* xref:{docdir}/druid.adoc[Druid]
+
