@@ -19,3 +19,79 @@ https://www.datamechanics.co/delight
 
 https://github.com/datamechanics/delight
 
+
+
+## Data Mechanics auto-tuning
+
+Data Mechanics automatically tunes the infrastructure parameters and Spark configurations of your scheduled applications run after run, to improve their performance and stability. Under the hood, we use the information contained in the Spark History Server to tweak various performance knobs of Spark, like the pod sizes of your Spark executor or the number of partitions Spark uses by default.
+
+This is what you see in the return payload when you launch the Spark application:
+```json
+{
+"trackingUuid": "2bc31a26-ac33-491f-b00f-cf97d6b1f14f",
+"appName": "daily-upload-20200625-023442-eabf",
+"userName": "julien@datamechanics.co",
+"jobName": "daily-upload",
+"configTemplateName": "daily-upload",
+"interactive": false,
+"resourceVersion": 62915181,
+"config": {
+"type": "Scala",
+"sparkVersion": "3.0.0",
+"mainApplicationFile": "gs://acme-assets/processing-1.0.0.jar",
+"mainClass": "com.acme.processing.DailyUpload",
+"image": "gcr.io/datamechanics/spark:platform-3.1.1-dm14",
+"arguments": ["2020-06-24"],
+"sparkConf": {
+"spark.kubernetes.allocation.batch.size": "10",
+"spark.dynamicAllocation.enabled": "true",
+"spark.dynamicAllocation.shuffleTracking.enabled": "true",
+"spark.dynamicAllocation.maxExecutors": "100",
+"spark.dynamicAllocation.executorAllocationRatio": "0.33",
+"spark.dynamicAllocation.sustainedSchedulerBacklogTimeout": "30"
+},
+"driver": {
+"cores": 1,
+"memory": "1g",
+"envVars": {
+"KUBERNETES_REQUEST_TIMEOUT": "30000",
+"KUBERNETES_CONNECTION_TIMEOUT": "30000"
+}
+},
+"executor": {
+"instances": 1,
+"cores": 4,
+"coreRequest": "3500m",
+"memory": "12g"
+},
+"restartPolicy": {
+"type": "Never"
+}
+}
+}
+```
+Data Mechanics has added performance configurations, so that your application smoothly runs on Kubernetes.
+
+For the first run of your application, the platform is unaware of the specifics of your app and sets sensible default values given the different node pools attached to your Kubernetes cluster.
+
+When you run a second application with jobName daily-upload however (say for day 2020-06-25), Data Mechanics uses the logs and metrics of the previous run 2020-06-24 to fine-tune configurations.
+
+Day after day, this auto-tuning process continues so that performance improves without action on your part.
+
+### Controlling auto-tuning
+To give you control over the tuning process, the config overrides have precedence over Data Mechanics auto-tuning, while config templates have not.
+
+So if you want to force a parameter and not have it be auto-tuned, just put it in the config overrides. On the other hand, parameters found in config templates will be tuned by Data Mechanics when it makes sense. The values you put in the config template will serve as a starting point for the algorithm!
+
+For example, if you set the following config fragment in the config template of your application,
+
+```json
+{
+"executor": {
+"instances": 10
+}
+}
+```
+Data Mechanics might change the number of executors at some point, in order to improve efficiency. If you put it in config overrides though, the number of executors will never change.
+
+Our recommendation is to put all performance parameters in a config template, so that Data Mechanics auto-tuning can adjust them over time.
