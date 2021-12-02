@@ -1,0 +1,21 @@
+# DataMechanics
+
+
+
+Run application through they API, so they can collec information but also monitor past runs and provide autotuning.
+
+Data Mechanics determines your application configurations by applying three sources of input. By order of priority:
+
+- Config overrides. Application-specific configurations that you can specify directly in your API request. They take absolute precedence.
+- Auto-tuning. Configurations which are automatically applied by Data Mechanics to improve your jobs performance and stability, based on the history of the past applications for the given job. This feature takes precedence over config templates but will be overriden by config overrides.
+- Config templates. Fragments of configuration that you can define directly inside Data Mechanics and reuse across many notebooks and jobs.
+
+
+https://www.datamechanics.co
+
+
+https://www.datamechanics.co/delight
+
+
+https://github.com/datamechanics/delight
+

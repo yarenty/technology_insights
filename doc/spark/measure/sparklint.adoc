@@ -1,4 +1,4 @@
-### SparkLint
+# SparkLint
 
 
 https://github.com/groupon/sparklint
