@@ -1,0 +1,52 @@
+# ML / DL / Reinforcement Learning
+
+## Frameworks
+
+- Ray.io
+- MxNet
+
+
+
+## Cloud frameworks
+
+- Sparkling Water
+
+- Spark ML
+
+
+## Libraries /SDK
+
+- Tensorflow
+- H2O
+
+
+
+## Data science rreposithories
+
+## MLOps
+
+## Notebook env
+
+- Jupyter
+- H2O Wave
+
+
+## Exploratory DAta Analysis
+
+
+## Speach & NLP Platforms
+
+- Wit.ai
+- Dialogflow
+- Lex
+- Luis
+- Watson
+
+
+## Computer Vision Platforms
+
+
+
+
+
+
