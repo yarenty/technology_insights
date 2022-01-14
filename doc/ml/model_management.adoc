@@ -2,18 +2,24 @@
 
 ## Inference
 
+
 ## Benchmarking
+
 
 ## Training
 
+
 ## Model marketplace
+
 
 ## Model serving
 
 
-## workflow automation
+## Workflow automation
+
 
 ## Tool
+
 
 ## Trusted & responsible AI
 
