@@ -1,5 +1,11 @@
 # ML / DL / Reinforcement Learning
 
+
+Check:
+
+https://landscape.lfai.foundation/
+
+
 ## Frameworks
 
 - Ray.io
@@ -21,17 +27,25 @@
 
 
 
-## Data science rreposithories
+## Data science repositories
+
+
 
 ## MLOps
+
+
 
 ## Notebook env
 
 - Jupyter
+- Zeppelin
 - H2O Wave
 
 
 ## Exploratory DAta Analysis
+
+- Apache Superset
+
 
 
 ## Speach & NLP Platforms

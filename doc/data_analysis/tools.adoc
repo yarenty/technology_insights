@@ -1,5 +1,10 @@
 # Data Analysis
 
+
+Check: https://landscape.lfai.foundation/
+
+
+
 ## Difference Between Data Analysis, Data Mining & Data Modeling
 
 Data analysis is done with the purpose of finding answers to specific questions. Data analytics techniques are similar to business analytics and business intelligence.
@@ -75,3 +80,6 @@ Mac,
 Linux.	| 4 stars	| Desktop application
 Multiple rows selection with filters.
 |
+
+
+Apache Superset!!
