@@ -5,21 +5,28 @@
 
 Matrix style screen saver
 
+```shell
 brew install cmatrix
-
+```
 cmatrix -s -C red
 
 ## sl
 
 joke - if you type sl instead ls - train is comming
 
-brew install sl
 
+```shell
+brew install sl
+```
 
 ## fortune
 
 obviously! add to path!
 
+```shell
 brew install fortune
+```
+
+
 
 
