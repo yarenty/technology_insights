@@ -50,14 +50,20 @@ https://www.linkedin.com/learning/rust-code-challenges/let-s-put-rust-into-pract
 
 
 
+## APPS
 
-
-## Tensorflow
+### Tensorflow
 https://tensorflow.github.io/rust/tensorflow/
 
 https://github.com/tensorflow/rust
 
 
+
+### gRPC
+
+https://medium.com/geekculture/quick-start-to-grpc-using-rust-c655785fc6f4
+
+https://grpc.io/docs/languages/
 
 
 
