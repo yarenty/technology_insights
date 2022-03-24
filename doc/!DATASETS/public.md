@@ -43,3 +43,10 @@ Complementary Collections
 
 https://github.com/the-pudding/data
 
+
+##  Data workshope
+
+https://github.com/kaybenleroll/data_workshops
+
+soem R data outputs .. maybe will check some time 
+
