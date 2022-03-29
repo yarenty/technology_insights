@@ -49,3 +49,14 @@ As a developer, you write application-dependent code to define Scorers and Actio
 ## kMeans
 
 https://github.com/rust-ml/book/blob/master/src/3_kmeans.md
+
+
+
+## Linfa 
+
+https://github.com/rust-ml/linfa
+
+
+
+More about rust:  [[core]]
+

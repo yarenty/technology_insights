@@ -2,7 +2,7 @@
 
 
 
-## Rus analyzer - IDE support
+## Rust analyzer - IDE support
 
 https://rust-analyzer.github.io/
 
@@ -42,3 +42,5 @@ https://github.com/blaze-init/blaze-rs
 
 
 
+## ML in rust
+See: [[ml/rust]]
