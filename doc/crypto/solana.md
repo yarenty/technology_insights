@@ -38,6 +38,20 @@ https://datahub-beta.figment.io/apps
 
 
 
+## Solana - JokeToEarn app
+
+
+https://github.com/matanwrites/solana-JokeToEarn
+
+
+
+
+
+
+
+
+
+
 
 
 
