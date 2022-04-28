@@ -46,6 +46,12 @@ https://github.com/drakulix/simplelog.rs
 
 ## Chrono
 
+https://crates.io/crates/chrono
+
 
 ## Tokio
+
+https://tokio.rs/
+
+https://docs.rs/tokio/1.18.0/tokio/
 
