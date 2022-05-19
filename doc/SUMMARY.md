@@ -24,6 +24,8 @@ Only interesting stuff (personally).
 - [GAMES](games/engines.md)
   - [Core Wars](games/corewars.md)
   - [Scala](games/game_in_scala.md)
+- [IoT mqtt](iot/mqtt.md)
+  - [IoT shodan](iot/shodan.md)
 - [Kubernetes](kubernetes/k3s.md) - K3S - kubernetes for IoT (respberry)
   - [AKRI](kubernetes/akri.md) - expose devices in kubernetes, also GPUs/ FPGAs
   - [Balena](kubernetes/balena.md) - develop, deploy and manage IoT project. (have a fleet)
