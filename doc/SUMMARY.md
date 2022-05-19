@@ -17,3 +17,6 @@ Only interesting stuff (personally).
 - [SHELL](SHELL/tools.md)
   - [Color codes](SHELL/color_codes.md)
   - [Must haves](SHELL/must_have.md)
+- [GAMES](games/engines.md)
+  - [Core Wars](games/corewars.md)
+  - [Scala](games/game_in_scala.md)
