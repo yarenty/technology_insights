@@ -36,3 +36,5 @@ Only interesting stuff (personally).
   - [MindsDB](ml/mindsdb.md)
   - [MLCube](ml/mlcube.md)
   - [RUST](ml/rust.md)
+- [Knowledge Graph - papers](knowledge_graph/papers.md)
+  - [Meta](knowledge_graph/meta.md)
