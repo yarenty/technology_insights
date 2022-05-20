@@ -5,8 +5,9 @@ Only interesting stuff (personally).
 
 
 - [Intro](intro.md)
-//# Rust
----
+
+# Programming
+
 - [Rust](rust/README.md)
   - [Must Have](rust/_must_have.md)
   - [CLI](rust/cli.md)
@@ -18,23 +19,17 @@ Only interesting stuff (personally).
   - [Timely](rust/timely.md)
   - [Datafusion](rust/datafusion.md)
   - [Meilisearch](rust/meilisearch.md)
-# Languages
+
 - [Scala](scala/sbt.md) - sbt
-- [Java](java.adoc) - multi trick on OS
-# Shell
-- [SHELL](SHELL/tools.md) tools
-  - [Color codes](SHELL/color_codes.md)
-  - [Must haves](SHELL/must_have.md)
-# Games
-- [GAMES](games/engines.md)
-  - [Core Wars](games/corewars.md)
-  - [Scala](games/game_in_scala.md)
-# IoT
-- [IoT mqtt](iot/mqtt.md)
-  - [IoT shodan](iot/shodan.md)
-- [Kubernetes](kubernetes/k3s.md) - K3S - kubernetes for IoT (respberry)
-  - [AKRI](kubernetes/akri.md) - expose devices in kubernetes, also GPUs/ FPGAs
-  - [Balena](kubernetes/balena.md) - develop, deploy and manage IoT project. (have a fleet)
+- [Java](java.md) - multi trick on OS
+
+- DBs
+  - [Mysql](db/mysql.md)
+  - [PostgreSQL](db/postgresql.md)
+  - [Druid](db/druid.md)
+  - [Firebase](db/firebase.md)
+  - [InfluxDB](db/influxdb.md)
+
 # ML
 - [ML](ml/ml.md) - TODO
   - [Courses](ml/courses.md)
@@ -45,6 +40,23 @@ Only interesting stuff (personally).
   - [RUST](ml/rust.md)
 - [Knowledge Graph - papers](knowledge_graph/papers.md)
   - [Meta](knowledge_graph/meta.md)
+- [Data Analysis](data_analysis/tools.md)
+  - [Data Analysis - papers](data_analysis/papers.md)
+- [Datasets - public](datasets/public.md)
+- [Datasets - APIs](datasets/apis.md)
+
+# IoT
+- [IoT mqtt](iot/mqtt.md)
+  - [IoT shodan](iot/shodan.md)
+- [Kubernetes](kubernetes/k3s.md) - K3S - kubernetes for IoT (respberry)
+  - [AKRI](kubernetes/akri.md) - expose devices in kubernetes, also GPUs/ FPGAs
+  - [Balena](kubernetes/balena.md) - develop, deploy and manage IoT project. (have a fleet)
+
+# Games
+- [GAMES](games/engines.md)
+  - [Core Wars](games/corewars.md)
+  - [Scala](games/game_in_scala.md)
+
 # Tools
 - [Visualization](visualization/index.md)
   - [Diagrams](visualization/diagrams.md)
@@ -54,3 +66,9 @@ Only interesting stuff (personally).
   - [Portfolios](visualization/portfolios.md)
   - [Pudding](visualization/pudding.md)
   - [Tips](visualization/tips.md)
+
+- [IOS](ios.md)
+- [SHELL](SHELL/tools.md) tools
+  - [Color codes](SHELL/color_codes.md)
+  - [Must haves](SHELL/must_have.md)
+  

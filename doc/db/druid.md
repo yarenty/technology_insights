@@ -1,5 +1,6 @@
 # Druid
 
+Apache Druid is a real-time database to power modern analytics applications.
 
 ## Install
 
