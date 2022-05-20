@@ -1,9 +1,10 @@
 # Set of technology updates and tips
 
-{{#title My Title}}
-
-
 All this is build using mdbook.
+
+```shell
+mdbook serve --open
+```
 
 mdBook is a command line tool to create books with Markdown. It is ideal for creating product or API documentation, tutorials, course materials or anything that requires a clean, easily navigable and customizable presentation.
 
