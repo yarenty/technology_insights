@@ -31,6 +31,25 @@ Only interesting stuff (personally).
   - [Firebase](db/firebase.md)
   - [InfluxDB](db/influxdb.md)
 
+- IoT
+  - [IoT mqtt](iot/mqtt.md)
+  - [IoT shodan](iot/shodan.md)
+- Kubernetes
+  - [K3S - for IoT](kubernetes/k3s.md) - K3S - kubernetes for IoT (respberry)
+  - [AKRI](kubernetes/akri.md) - expose devices in kubernetes, also GPUs/ FPGAs
+  - [Balena](kubernetes/balena.md) - develop, deploy and manage IoT project. (have a fleet)
+
+
+- GAMES
+  - [Engines](games/engines.md)
+  - [Core Wars](games/corewars.md)
+  - [Scala](games/game_in_scala.md)
+
+
+
+# Cloud
+- [Cloud](cloud/oracle_free_tier.md)
+
 # ML
 - [ML](ml/ml.md) - TODO
   - [Courses](ml/courses.md)
@@ -44,20 +63,8 @@ Only interesting stuff (personally).
 - [Datasets - public](datasets/public.md)
 - [Datasets - APIs](datasets/apis.md)
 
-# IoT
-- [IoT](iot/mqtt.md)
-  - [IoT mqtt](iot/mqtt.md)
-  - [IoT shodan](iot/shodan.md)
-- [Kubernetes](kubernetes/k3s.md) - K3S - kubernetes for IoT (respberry)
-  - [Kubernetes](kubernetes/k3s.md) - K3S - kubernetes for IoT (respberry)
-  - [AKRI](kubernetes/akri.md) - expose devices in kubernetes, also GPUs/ FPGAs
-  - [Balena](kubernetes/balena.md) - develop, deploy and manage IoT project. (have a fleet)
 
-# Games
-- [GAMES](games/engines.md)
-  - [Engines](games/engines.md)
-  - [Core Wars](games/corewars.md)
-  - [Scala](games/game_in_scala.md)
+
 
 # Tools
 - [Visualization](visualization/index.md)
@@ -73,5 +80,23 @@ Only interesting stuff (personally).
 - [SHELL](tools/shell/tools.md) tools
   - [Color codes](tools/shell/color_codes.md)
   - [Must haves](tools/shell/must_have.md)
-  
+
+# Crypto
+- [Crypto](crypto/index.md)
+  - [Ethereum](crypto/ethereum.md)
+    - [Solidity](crypto/ethereum/solidity.md)
+    - [Books](crypto/ethereum/books.md)
+  - [Web3](crypto/web3.md)
+    - [Links](crypto/web3/links.md)
+  - [DAO](crypto/dao.md)
+  - [Polkadot](crypto/polkadot.md)
+  - [Solana](crypto/solana.md)
+  - [Chainlink](crypto/chainlink.md)
+  - [Kadena](crypto/kadena.md)
+  - [Lighting](crypto/lighting.md)
+  - [Near](crypto/near.md)
+  - [Polygon](crypto/polygon.md)
+  - [NFT - wax](crypto/nft/wax.md)
+  - [Links](crypto/links.md)
+
 
