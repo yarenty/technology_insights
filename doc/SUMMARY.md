@@ -22,7 +22,7 @@ Only interesting stuff (personally).
 
 - [Scala](scala/sbt.md) - sbt
   - [SBT](scala/sbt.md) - sbt
-- [Java](java.md) - multi trick on OS
+- [Java](java/java.md) - multi trick on OS
 
 - DBs
   - [Mysql](db/mysql.md)
@@ -69,8 +69,9 @@ Only interesting stuff (personally).
   - [Pudding](visualization/pudding.md)
   - [Tips](visualization/tips.md)
 
-- [IOS](ios.md)
-- [SHELL](SHELL/tools.md) tools
-  - [Color codes](SHELL/color_codes.md)
-  - [Must haves](SHELL/must_have.md)
+- [IOS](ios/ios.md)
+- [SHELL](tools/shell/tools.md) tools
+  - [Color codes](tools/shell/color_codes.md)
+  - [Must haves](tools/shell/must_have.md)
   
+
