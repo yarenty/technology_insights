@@ -3,7 +3,7 @@ authors = ["Jaroslaw Nowosad"]
 language = "en"
 multilingual = false
 src = "doc"
-title = "Technology Insights - 2022"
+title = "Insights - 2022"
 
 [output.html]
 mathjax-support = true
