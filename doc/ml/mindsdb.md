@@ -1,7 +1,11 @@
 # MindsDB
 
 
-https://mindsdb.com/[]
+[MindsDB](https://mindsdb.com/)
+
+ - machine learning inside DB
+ - integrates with: mysql, postgressql, kafka, cassandra, mongo , redis, oracle, sql server
+ - few nice use cases, can run on docker, to be used => maybe in some production type scenario - early prevention ...
 
 
 ## Intro 
@@ -9,12 +13,11 @@ https://mindsdb.com/[]
 A predictive layer for existing databases that enables rapid prototyping & deployment of ML Models from your database. Significantly reducing the time and cost of machine learning workflows.
 
 From:
-
-image::img/mindsdb/ML_classic.png[]
+![img](../img/mindsdb/ML_classic.png)
 
 To:
 
-image::img/mindsdb/ML_modern.png[]
+![](../img/mindsdb/ML_modern.png)
 
 
 Get the predictions you need as simple tables in your database.
@@ -28,7 +31,7 @@ MindsDB looks and acts like a database and thus seamlessly interacts with your c
 
 ## Brochure
 
-xref::resources/mindsdb/MindsDB Product Brochure F21.pdf[]
+[Brochure](MindsDB Product Brochure F21.pdf)
 
 
 
