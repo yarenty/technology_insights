@@ -5,7 +5,6 @@
 https://en.wikipedia.org/wiki/Incremental_computing
 
 
-
 - Adapton
 
 http://adapton.org/
