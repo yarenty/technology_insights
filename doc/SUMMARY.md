@@ -64,8 +64,6 @@ Only interesting stuff (personally).
 - [Datasets - APIs](datasets/apis.md)
 
 
-
-
 # Tools
 - [Visualization](visualization/index.md)
   - [Diagrams](visualization/diagrams.md)
@@ -81,22 +79,5 @@ Only interesting stuff (personally).
   - [Color codes](tools/shell/color_codes.md)
   - [Must haves](tools/shell/must_have.md)
 
-# Crypto
-- [Crypto](crypto/index.md)
-  - [Ethereum](crypto/ethereum.md)
-    - [Solidity](crypto/ethereum/solidity.md)
-    - [Books](crypto/ethereum/books.md)
-  - [Web3](crypto/web3.md)
-    - [Links](crypto/web3/links.md)
-  - [DAO](crypto/dao.md)
-  - [Polkadot](crypto/polkadot.md)
-  - [Solana](crypto/solana.md)
-  - [Chainlink](crypto/chainlink.md)
-  - [Kadena](crypto/kadena.md)
-  - [Lighting](crypto/lighting.md)
-  - [Near](crypto/near.md)
-  - [Polygon](crypto/polygon.md)
-  - [NFT - wax](crypto/nft/wax.md)
-  - [Links](crypto/links.md)
 
 
