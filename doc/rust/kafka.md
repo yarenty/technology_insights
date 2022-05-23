@@ -5,6 +5,11 @@
 
 https://github.com/fede1024/rust-rdkafka
 
+```toml
+rdkafka = "0.28"
+```
+
+
 
 A fully asynchronous, futures-enabled Apache Kafka client library for Rust based on librdkafka.
 
