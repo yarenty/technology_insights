@@ -87,6 +87,9 @@ https://www.confluent.io/blog/crossing-streams-joins-apache-kafka/
 
 # Red Panda
 
+https://redpanda.com/
+
+
 https://docs.redpanda.com/docs/reference/faq/
 
 
