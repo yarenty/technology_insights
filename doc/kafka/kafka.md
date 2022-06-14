@@ -1,7 +1,50 @@
-# Kafka in rust
+# Kafka
 
 
-## rdkafka
+
+## KAFKA - WSL
+
+cd /mnt/d/apps/kafka_2.13-3.2.0/
+
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+bin/kafka-server-start.sh config/server.properties
+
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3 --topic ufo
+
+bin/kafka-console-consumer.sh --topic ufo --from-beginning --bootstrap-server localhost:9092  --property print.key=true --property print.timestamp=true
+
+
+
+## Redpanda
+
+rpk container start -n 3
+
+rpk topic create ufo --brokers 127.0.0.1:50494,127.0.0.1:50500,127.0.0.1:50499 --partitions 3
+
+rpk topic consume ufo --brokers 127.0.0.1:50494,127.0.0.1:50500,127.0.0.1:50499 --partitions 3
+
+rpk container purge
+
+
+## Confluence kafka
+
+curl --output docker-compose.yml \                                                                                              https://raw.githubusercontent.com/confluentinc/cp-all-in-one/7.1.1-post/cp-all-in-one/docker-compose.yml
+
+docker-compose up -d
+
+docker-compose ps
+
+docker-compose stop
+
+docker system prune -a --volumes --filter "label=io.confluent.docker"
+
+
+
+
+
+
+## RUST - rdkafka
 
 https://github.com/fede1024/rust-rdkafka
 
