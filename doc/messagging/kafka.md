@@ -1,8 +1,17 @@
 # Kafka
 
+https://developers.redhat.com/articles/2021/07/19/benchmarking-kafka-producer-throughput-quarkus#
+
+https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines
+
+https://www.youtube.com/watch?v=PzPXRmVHMxI
+
+https://docs.confluent.io/platform/current/quickstart/ce-docker-quickstart.html
 
 
 ## KAFKA - WSL
+
+```shell
 
 cd /mnt/d/apps/kafka_2.13-3.2.0/
 
@@ -14,10 +23,12 @@ bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-fac
 
 bin/kafka-console-consumer.sh --topic ufo --from-beginning --bootstrap-server localhost:9092  --property print.key=true --property print.timestamp=true
 
+````
 
 
 ## Redpanda
 
+```shell
 rpk container start -n 3
 
 rpk topic create ufo --brokers 127.0.0.1:50494,127.0.0.1:50500,127.0.0.1:50499 --partitions 3
@@ -25,10 +36,11 @@ rpk topic create ufo --brokers 127.0.0.1:50494,127.0.0.1:50500,127.0.0.1:50499 -
 rpk topic consume ufo --brokers 127.0.0.1:50494,127.0.0.1:50500,127.0.0.1:50499 --partitions 3
 
 rpk container purge
-
+```
 
 ## Confluence kafka
 
+```shell
 curl --output docker-compose.yml \                                                                                              https://raw.githubusercontent.com/confluentinc/cp-all-in-one/7.1.1-post/cp-all-in-one/docker-compose.yml
 
 docker-compose up -d
@@ -39,7 +51,7 @@ docker-compose stop
 
 docker system prune -a --volumes --filter "label=io.confluent.docker"
 
-
+```
 
 
 
@@ -66,13 +78,9 @@ https://github.com/fede1024/kafka-benchmark
 
 
 
-
-
 ## Librdkafka
 
 https://github.com/edenhill/librdkafka/blob/master/INTRODUCTION.md#broker-version-compatibility
-
-
 
 
 
