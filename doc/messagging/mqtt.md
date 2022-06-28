@@ -30,3 +30,13 @@ https://docs.rs/mqtt-protocol/0.11.2/mqtt/
 ## MQTT and IoT
 
 https://www.youtube.com/watch?v=AzqA4ZwknW4
+
+
+## Numerous freely available servers are listed on MQTT Github Wiki.
+
+https://github.com/mqtt/mqtt.org/wiki/public_brokers
+
+
+These servers are great for simple hobby apps that run on low-end devices like Arduinos, RaspberryPi, or the ESP16 WiFi device. Some servers offer WebSocket support, which allows a browser to talk directly to the device without the need for a backend.
+
+
