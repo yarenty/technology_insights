@@ -97,6 +97,7 @@ Only interesting stuff (personally).
   - [TMUX](tools/shell/tmux.md)
 - [Linux books](tools/linux/books.md)
 
+- [DEMO - typing commands live!](tools/demo.md)
 - [Github](tools/github.md)
 
 
