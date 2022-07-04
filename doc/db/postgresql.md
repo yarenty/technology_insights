@@ -1,5 +1,4 @@
-
-==> postgresql
+# postgresql
 To migrate existing data from a previous major version of PostgreSQL run:
 brew postgresql-upgrade-database
 
