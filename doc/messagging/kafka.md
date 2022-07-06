@@ -284,3 +284,197 @@ docker network rm redpandanet
 
 
 
+## KAFKA OPS
+
+
+### Julie 
+
+https://github.com/kafka-ops/julie
+
+JulieOps helps you automate the management of your things within Apache Kafka, from Topics, Configuration to Metadata but as well Access Control, Schemas
+
+java, docker, rpm ..
+
+
+- Support for multiple access control mechanisms:
+  - Traditional ACLs
+  - Role Bases Access Control as provided by Confluent
+- Automatically set access control rules for:
+  - Kafka Consumers
+  - Kafka Producers
+  - Kafka Connect
+  - Kafka Streams applications ( microservices )
+  - KSQL applications
+  - Schema Registry instances
+  - Confluent Control Center
+  - KSQL server instances
+- Manage topic naming with a topic name convention
+  - Including the definition of projects, teams, datatypes and for sure the topic name
+  - Some topics are flexible defined by user requirements
+- Allow for creation, delete and update of:
+  - topics, following the topic naming convention
+  - Topic configuration, variables like retention, segment size, etc
+  - Acls, or RBAC rules
+  - Service Accounts (Experimental feature only available for now in Confluent Cloud)
+- Manage your cluster schemas.
+  - Support for Confluent Schema Registry
+
+
+### TopicCTL
+
+https://github.com/segmentio/topicctl
+
+A tool for easy, declarative management of Kafka topics. Includes the ability to "apply" topic changes from YAML as well as a repl for interactive exploration of brokers, topics, consumer groups, messages, and more.
+
+go, docker
+
+
+### Terreform provider kafka
+
+https://github.com/Mongey/terraform-provider-kafka
+
+A Terraform plugin for managing Apache Kafka.
+
+https://www.terraform.io/
+
+go, cloud
+
+
+### Strimzi
+
+https://strimzi.io/
+
+Kafka on Kubernetes in a few minutes
+Strimzi provides a way to run an Apache Kafka cluster on Kubernetes in various deployment configurations.
+
+
+### Kafka gitOps
+
+https://github.com/devshawn/kafka-gitops
+
+Manage Apache Kafka topics and ACLs through a desired state file.
+This tool supports self-hosted Kafka, managed Kafka, and Confluent Cloud clusters.
+
+### Kafka Helmsman
+
+https://github.com/teslamotors/kafka-helmsman
+
+kafka-helmsman is a repository of tools that focus on automating a Kafka deployment. These tools were developed by data platform engineers at Tesla, they add value to the open-source Kafka ecosystem in a couple of ways:
+
+The tasks covered by these tools are infamous for adding toil on engineers, for us these tools save engineering weeks each quarter
+They have been battle-tested internally, high quality and user-friendly
+The tools are
+
+- Kafka consumer freshness tracker
+- Kafka topic enforcer
+- Kafka roller
+- Kafka quota enforcer
+
+
+### Jikkou
+
+https://github.com/streamthoughts/jikkou
+
+Jikkou (jikkō / 実行) is an open-source tool to help you automate the management of the configurations that live on your Apache Kafka clusters. It was developed by Kafka ❤️ to make daily operations on an Apache Kafka cluster simpler for both developers and administrators.
+
+It can efficiently manage configuration changes for Topics, ACLs, Quotas and more with the use of resource specification files. It is also applicable to quickly replicate the configuration of a production cluster to another with a few command lines or to initialize a new cluster for testing purpose.
+
+Note: Jikkou is the project formerly known as Kafka Specs. Old versions of this project can still be found under that name.
+
+The main usage scenarios
+- Create new resource entities on an Apache Kafka cluster (i.e., Topics, ACLs, and Quotas).
+- Update the configurations of existing resource entities.
+- Delete resource entities which are not anymore managed.
+- Describe all the configuration defined for Brokers.
+- Describe all the configuration defined for Topics, ACLs, and Quotas.
+
+Core features that make it awesome
+- Simple command line interface (CLI) for end user.
+- Simple Java API on top of the Kafka’s Java AdminClient.
+- Completely stateless and thus does not store any state (Basically: Your kafka cluster is the state of Jikkou).
+- Pluggable validation rules to ensure that resources meet your requirement before being created or updated ona target cluster.
+- Pluggable resource manager to extend Jikkou with cloud managed services for Apache Kafka which are supported out-of-the-box.
+- Simple templating mechanism using Jinja notation.
+
+
+### ns4kafka
+
+https://github.com/michelin/ns4kafka
+
+Ns4kafka brings to Apache Kafka a new deployment model for your different Kafka resources following the best practices from Kubernetes :
+
+- Namespace isolation. You can manage your own Kafka resources within your namespace, and you don't see Kafka resources managed by other namespaces. Isolation is provided by granting ownership on names and prefixes to Namespaces
+- Desired state. You define how the deployed resources should look like and ns4kafka will align the Kafka cluster with your desired state.
+- Server side validation. Customizable validation rules defined by Kafka OPS to enforce values on Topic configs (min.insync.replica, replication.factor, ...) or Connect configs (connect.class, consumer.override.jaas, ...).
+- Robust CLI for all your CI/CD needs. The kafkactl command line tool lets you control your resources within your namespace. You can deploy resources, list or delete them, reset consumer groups and so on.
+- An evolving list of Resources. As Kafka project teams, you can now become fully autonomous managing Kafka Topics, Connectors, Schemas, AccessControlEntries and ConsumerGroups. Kafka Admin are treated equaly only with different resources to manage : Namespaces, RoleBindings, ResourceQuotas, ResourceValidators, AccessControlEntries, ...
+
+Ns4kafka is built on top of 2 components : an API and a CLI.
+
+- The Ns4kafka API exposes all the required controllers to list, create and delete Kafka resources. It must be deployed and managed by Kafka administrators.
+- The Kafkactl CLI is, much like K8S's kubectl, a wrapper on the API to let any user or CI/CD pipeline deploy Kafka resources using yaml descriptors. It is made available to any project who needs to manage Kafka resources.
+
+
+### kafkaer
+
+
+https://github.com/navdeepsekhon/kafkaer
+
+
+Kafkaer is a deployment and configuration tool for Apache Kafka. It allows you to automate creation/update of topics and brokers across multiple environments. Create one template configration file and control using different properties files.
+
+Current features:
+
+- Create topics
+- Update configurations and partitions for existing topics
+- Update configs for a specific broker
+- Update configs for entire kafka cluster
+- Create/update Access control lists (ACLs)
+- Delete all topics created by tool
+- Delete all schemas from schema registry when deleting topics
+
+
+### koperator
+
+https://github.com/banzaicloud/koperator
+
+
+Apache Kafka is an open-source distributed streaming platform, and some of the main features of the Koperator are:
+
+- the provisioning of secure and production ready Kafka clusters
+- fine grained broker configuration support
+- advanced and highly configurable External Access via LoadBalancers using Envoy
+- graceful Kafka cluster scaling and rebalancing
+- monitoring via Prometheus
+- encrypted communication using SSL
+- automatic reaction and self healing based on alerts (plugin system, with meaningful default alert plugins) using Cruise Control
+- graceful rolling upgrade
+- advanced topic and user management via CRD
+
+- Koperator architecture
+
+![koperator](../img/kafka-operator-arch.png)
+We took a different approach to what's out there - we believe for a good reason - please read on to understand more about our design motivations and some of the scenarios which were driving us to create Koperator.
+
+Koperator is a core part of Banzai Cloud Supertubes (now called Cisco Streaming Data Manager) that helps you create production-ready Apache Kafka clusters on Kubernetes, with scaling, rebalancing, and alerts based self healing. While the Koperator itself is an open-source project, the Banzai Cloud Supertubes product extends the functionality of Koperator with commercial features (for example, built-in monitoring and multiple ways of disaster recovery). Read a detailed comparison of Supertubes and Koperator.
+
+
+
+
+### KafkaWize
+
+https://github.com/muralibasani/kafkawize
+
+Kafkawize is now fully opensource. 🥳 All the features of the Kafkawize are now available at no cost.
+
+Kafkawize is a Self service Apache Kafka Topic Management/Governance tool/portal. It is a web application which automates the process of creating and browsing Kafka topics, acls, avro schemas, connectors by introducing roles/authorizations to users of various teams of an organization.
+
+![kafkawize](../img/kafkawize_arch.png)
+
+!Note: Supports avro schema registry!
+
+https://kafkawize.readthedocs.io/en/latest/features.html
+
+
+
+
