@@ -65,6 +65,7 @@ Only interesting stuff (personally).
   - [MindsDB](ml/mindsdb.md)
   - [MLCube](ml/mlcube.md)
   - [RUST](ml/rust.md)
+  - [MLGO - LLVM](ml/mlgo_llvm.md)
 - [Time series](ml/time_series/README.md)
   - [Papers](ml/time_series/papers.md)
   - [Transformers](ml/time_series/time_serie_transformer.md)
@@ -87,6 +88,7 @@ Only interesting stuff (personally).
   - [Manim](visualization/manim.md)
   - [Portfolios](visualization/portfolios.md)
   - [Pudding](visualization/pudding.md)
+  - [Rust](visualization/rust.md)
   - [Tips](visualization/tips.md)
 
 - [IOS](ios/ios.md)
