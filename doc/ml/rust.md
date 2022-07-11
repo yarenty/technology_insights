@@ -127,16 +127,53 @@ If this strikes a chord with you, please take a look at the [roadmap](https://gi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 More about rust:  [[core]]
+
+
+## Liquid ML
+
+https://crates.io/crates/liquid-ml
+
+LiquidML is a platform for distributed, scalable data analysis for data sets too large to fit into memory on a single machine. It aims to be easy and simple to use, allowing users to easily create their own map and filter operations, leaving everything else to liquid_ml. It ships with many example uses, including the decision tree and random forest machine learning algorithms built in, showing the power and ease of use of the platform.
+
+LiquidML is written in Rust for both performance and safety reasons, allowing many optimizations to be made more easily without the risk of a memory safety bug. This helps guarantee security around our clients' data, as many memory safety bugs can be exploited by malicious hackers.
+
+LiquidML is currently in the state of an MVP. Tools on top of LiquidML can built and several examples are included in this crate to demonstrate various use cases.
+
+
+## Easy ML
+
+
+
+https://github.com/Skeletonxf/easy-ml
+
+This is a pure Rust library which makes heavy use of passing closures, iterators, generic types, and other rust idioms that machine learning libraries which wrap around another language backend could never provide easily. This library tries to provide adequate documentation to explain what the functions compute, what the computations mean, and examples of tasks you might want to do with this library:
+
+Linear Regression
+k-means Clustering
+Logistic Regression
+Naïve Bayes
+Feedforward neural networks
+Backprop with Automatic Differentiation
+using a custom numeric type such as num_bigint::BigInt
+Handwritten digit recognition in the browser
+This library is not designed for deep learning. The implementations of everything are more or less textbook mathematical definitions, and do not feature extensive optimisation. You might find that you need to use a faster library once you've explored your problem, or that you need something that's not implemented here and have to switch. I hope that being able to at least start here may be of use.
+
+
+
+
+## Util ML
+
+
+https://github.com/radialHuman/rust/tree/master/util/util_ml
+
+https://crates.io/crates/simple_ml
+
+@TODO: This really need proper refactoring. 
+one file libraries ...
+looks like it should work ...
+
+
+
+
 
